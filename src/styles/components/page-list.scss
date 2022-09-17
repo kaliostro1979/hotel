@@ -1,0 +1,108 @@
+.List {
+  display: flex;
+  justify-content: space-between;
+  height: calc(100vh - 64px);
+  list-style: none;
+  overflow: hidden;
+}
+
+.ListItem {
+  position: relative;
+  height: 100%;
+  transition: all .8s ease-out;
+  min-width: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  cursor: pointer;
+  filter: grayscale(1);
+
+  &:not(:first-child) {
+    border-left: 2px solid #ffffff;
+  }
+
+  &:not(:last-child) {
+    border-right: 2px solid #ffffff;
+  }
+
+  .ListItemTitleWrapper {
+    position: absolute;
+    top: 70px;
+    left: -19px;
+    transition: top .5s ease, left .5s ease, right .5s ease, transform .5s ease;
+    transform: rotate(90deg);
+    color: transparent;
+    padding: 30px;
+    min-width: max-content;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+
+    .ListItemTitle {
+      font-size: 45px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .ListItemContentWrapper {
+    position: absolute;
+    top: 150px;
+    left: 190px;
+    transition: top .5s ease, left .5s ease, right .5s ease, transform .5s ease;
+
+    .ListItemContent {
+      width: 530px;
+      max-width: 530px;
+      color: #ffffff;
+    }
+  }
+
+  &.Active {
+    flex-grow: 1;
+    filter: grayscale(0);
+
+    .ListItemTitleWrapper {
+      top: 30px;
+      transform: rotate(0);
+      animation: rotateTitle .8s ease-in;
+      right: unset;
+      left: 0;
+      transition: top .5s ease, left .5s ease, right .5s ease, transform .5s ease;
+      color: #ffffff;
+      -webkit-text-stroke-width: 0;
+      -webkit-text-stroke-color: transparent;
+    }
+
+    .ListItemContentWrapper {
+      left: 30px;
+    }
+  }
+}
+
+@keyframes rotateTitle {
+  0% {
+    transform: rotate(90deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+
+  85% {
+    transform: rotate(2deg);
+  }
+
+  90% {
+    transform: rotate(0);
+  }
+
+  95% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+

@@ -1,0 +1,14 @@
+.slide {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(1);
+  transition: all 1s ease;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+

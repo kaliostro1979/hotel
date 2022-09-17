@@ -1,0 +1,46 @@
+@import "../variables";
+
+.Button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-white;
+  letter-spacing: 0.2em;
+  padding: 14px 7px 7px 14px;
+  min-width: 170px;
+  margin-top: 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 7px);
+    height: calc(100% - 7px);
+    border-left: 7px solid $color-white;
+    border-top: 7px solid $color-white;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: calc(100% - 7px);
+    height: calc(100% - 7px);
+    border-right: 7px solid $color-white;
+    border-bottom: 7px solid $color-white;
+  }
+
+  &.Dark {
+    color: #000000;
+    margin-top: -7px;
+
+    &:after, &:before {
+      border-color: #000000;
+    }
+  }
+}
