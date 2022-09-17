@@ -4,14 +4,14 @@ import { SOCIAL_NETWORKS } from "../../constants/social.constants";
 
 const SocialIcons = () => {
   return (
-    <div>
+    <div className={"SocialIconList"}>
       {
         SOCIAL_NETWORKS.map(icon=>{
-          return <div>
-            <svg className="socialList__itemLinkSvg" viewBox="0 0 26 25">
+          return <a href={icon.link} className={"SocialIconWrapper"}>
+            <svg className="SocialIcon" viewBox="0 0 26 25">
               <use xlinkHref={`#${icon.name}`} />
             </svg>
-          </div>
+          </a>
         })
       }
     </div>

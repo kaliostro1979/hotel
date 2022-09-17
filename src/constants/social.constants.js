@@ -1,22 +1,22 @@
 export const SOCIAL_NETWORKS = [
   {
     name: "facebook",
+    link: "#",
     icon: "<FacebookIcon/>"
   },
   {
-    name: "linkedin",
-    icon: "<LinkedinIcon/>"
-  },
-  {
     name: "instagram",
+    link: "#",
     icon: "<InstagramIcon/>"
   },
   {
     name: "telegram",
+    link: "#",
     icon: "<TelegramIcon/>"
   },
   {
     name: "tripadvisor",
+    link: "#",
     icon: "<TripadvisorIcon/>"
   }
 ]

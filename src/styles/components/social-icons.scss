@@ -1,0 +1,19 @@
+.SocialIconWrapper {
+  padding: 17px 12px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  transition: all ease .3s;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover {
+    transform: scale(2);
+  }
+
+  .SocialIcon {
+    width: 15px;
+  }
+}
+
