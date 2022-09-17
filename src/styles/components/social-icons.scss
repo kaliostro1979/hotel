@@ -1,19 +1,50 @@
 .SocialIconWrapper {
-  padding: 17px 12px;
-  border: 1px solid #000000;
-  border-radius: 20px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 6px;
+  border: 2px solid $brand-primary;
+  border-radius: 30px;
   transition: all ease .3s;
+  transform: scale(1);
 
   &:not(:last-child) {
     margin-right: 30px;
   }
 
+  &.Light {
+    border-color: $color-white;
+
+    &:hover {
+      &:before {
+        border-color: $color-white;
+      }
+    }
+
+    .SocialIcon {
+      color: $color-white;
+    }
+  }
+
   &:hover {
-    transform: scale(2);
+    transform: scale(1.9);
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      left: 2px;
+      right: 2px;
+      border: 1px solid $brand-primary;
+      border-radius: 20px;
+    }
   }
 
   .SocialIcon {
     width: 15px;
+    color: $brand-primary;
   }
 }
 

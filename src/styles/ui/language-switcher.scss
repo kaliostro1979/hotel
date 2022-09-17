@@ -1,0 +1,33 @@
+.LanguageSwitcherWrapper {
+
+}
+
+.LanguageSwitcherList {
+  display: flex;
+}
+
+.LanguageSwitcherListItem {
+  padding: 0 20px;
+
+  &:not(:last-child) {
+    border-right: 1px solid $color-white;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.LanguageSwitcherListItemLink {
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-white;
+
+  &.Active {
+    text-decoration: underline;
+  }
+}

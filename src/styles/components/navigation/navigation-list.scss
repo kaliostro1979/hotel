@@ -1,0 +1,15 @@
+.NavigationListItem {
+  margin-bottom: 10px;
+
+  a {
+    font-size: 45px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $color-white;
+
+    &.Active {
+      color: $color-white;
+    }
+  }
+}
