@@ -11,7 +11,7 @@
   letter-spacing: 0.2em;
   padding: 14px 7px 7px 14px;
   min-width: 170px;
-  margin-top: 20px;
+  margin-top: -7px;
 
   &:before {
     content: "";
@@ -37,7 +37,6 @@
 
   &.Dark {
     color: #000000;
-    margin-top: -7px;
 
     &:after, &:before {
       border-color: #000000;
