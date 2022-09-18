@@ -1,5 +1,6 @@
 import React, {useCallback, useState} from 'react';
 import PageListItem from "./PageListItem";
+import {useTranslation} from "react-i18next";
 
 const ListItemsArray = [
     {
@@ -30,6 +31,7 @@ const ListItemsArray = [
 
 const PageList = () => {
     const [activeIndex, setActiveIndex] = useState(0)
+    const {t} = useTranslation()
 
     const openItem = useCallback((activeId) => {
         setActiveIndex(activeId)
@@ -40,7 +42,7 @@ const PageList = () => {
             {
                 ListItemsArray.map((item, index)=>{
                     return <PageListItem
-                        text={item.name}
+                        text={t(`home.${item.name.toLowerCase()}`)}
                         callBack={openItem}
                         activeIndex={activeIndex}
                         image={item.image}

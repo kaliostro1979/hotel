@@ -29,9 +29,10 @@
   .ListItemTitleWrapper {
     position: absolute;
     top: 70px;
-    left: -19px;
+    left: 30px;
     transition: top .5s ease, left .5s ease, right .5s ease, transform .5s ease;
-    transform: rotate(90deg);
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
     color: transparent;
     padding: 30px;
     min-width: max-content;
@@ -49,7 +50,7 @@
     position: absolute;
     top: 150px;
     left: 190px;
-    transition: top .5s ease, left .5s ease, right .5s ease, transform .5s ease;
+    transition: top 1s ease, left 1s ease, right 1s ease, transform 1s ease;
 
     .ListItemContent {
       width: 530px;
@@ -65,8 +66,9 @@
 
     .ListItemTitleWrapper {
       top: 30px;
+      writing-mode: horizontal-tb;
       transform: rotate(0);
-      animation: rotateTitle .8s ease-in;
+      //animation: rotateTitle .8s ease-in;
       right: unset;
       left: 0;
       transition: top .5s ease, left .5s ease, right .5s ease, transform .5s ease;
@@ -81,9 +83,9 @@
   }
 }
 
-@keyframes rotateTitle {
+/*@keyframes rotateTitle {
   0% {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
   }
 
   80% {
@@ -105,5 +107,5 @@
   100% {
     transform: rotate(0);
   }
-}
+}*/
 

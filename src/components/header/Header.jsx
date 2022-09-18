@@ -7,7 +7,7 @@ import {MainContext} from "../../context/MainContext";
 import CloseIcon from "../../icons/CloseIcon";
 
 const Header = ({light}) => {
-    const {setOpen, open} = useContext(MainContext)
+    const {setOpen, open, activeLanguage} = useContext(MainContext)
 
     const toggleMenu = ()=>{
         setOpen(!open)
@@ -18,7 +18,7 @@ const Header = ({light}) => {
      <div className={"HeaderMenuIconWrapper"} onClick={toggleMenu}>
          {light ? <BurgerMenuIcon/> : <CloseIcon/>}
      </div>
-      <Link to={"/"} className={"HeaderMenuLogo"}>
+      <Link to={`/${activeLanguage}`} className={"HeaderMenuLogo"} onClick={()=>setOpen(false)}>
         <Logo/>
       </Link>
       <StyledLink text={"Booking"} url={"#"} dark={light}/>

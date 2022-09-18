@@ -1,0 +1,19 @@
+.Contacts * {
+  color: $color-white;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ContactsTitle * {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.ContactsItem {
+  margin-bottom: 15px;
+}
+
+.ContactsAddress {
+  text-transform: uppercase;
+}

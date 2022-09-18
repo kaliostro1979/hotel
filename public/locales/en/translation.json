@@ -6,5 +6,11 @@
     "stories": "Stories",
     "tours": "Tours",
     "upcoming_projects": "Upcoming Projects"
+  },
+  "home": {
+    "hotel": "Hotel",
+    "hostel": "Hostel",
+    "tours": "Tours",
+    "stories": "Stories"
   }
 }
