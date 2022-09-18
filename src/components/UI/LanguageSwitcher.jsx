@@ -1,35 +1,41 @@
-import React, { useContext } from 'react';
-import { NavLink, useNavigate } from "react-router-dom";
-import { MainContext } from "../../context/MainContext";
-import { LOCALES } from "../../constants/locales.constants";
+import React, {useContext} from 'react';
+import {useNavigate} from "react-router-dom";
+import {MainContext} from "../../context/MainContext";
+import {LOCALES} from "../../constants/locales.constants";
+import {useTranslation} from "react-i18next";
+
 
 const LanguageSwitcher = () => {
-  const {activeLanguage, setActiveLanguage, setOpen} = useContext(MainContext)
-  const navigate = useNavigate()
-  const changeLanguage = (language)=>{
-    setActiveLanguage(language)
-    setOpen(false)
+    const {activeLanguage, setActiveLanguage, setOpen, Cookies} = useContext(MainContext)
+    const {i18n} = useTranslation()
+    const navigate = useNavigate()
 
-    const currentLocation = window.location.pathname.split("/")
-    currentLocation[1] = language
-    const newLocation = currentLocation.join("/")
-    navigate(newLocation)
-  }
+    const handleChangeLanguage = (language) => {
+        i18n.changeLanguage(language).then()
+        setActiveLanguage(language)
+        Cookies.set("i18next", language)
+        setOpen(false)
 
-  return (
+        const currentLocation = window.location.pathname.split("/")
+        currentLocation[1] = language
+        const newLocation = currentLocation.join("/")
+        navigate(newLocation)
+    }
+
+    return (
         <div className={"LanguageSwitcherWrapper"}>
             <ul className={"LanguageSwitcherList"}>
-              {
-                LOCALES.map(locale=>{
-                  return (
-                    <li
-                      className={locale.code === activeLanguage ? "LanguageSwitcherListItem Active" : "LanguageSwitcherListItem"}
-                      onClick={()=>changeLanguage(locale.code)}
-                      key={locale.code}
-                    >{locale.name}</li>
-                  )
-                })
-              }
+                {
+                    LOCALES.map(locale => {
+                        return (
+                            <li
+                                className={locale.code === activeLanguage ? "LanguageSwitcherListItem Active" : "LanguageSwitcherListItem"}
+                                onClick={() => handleChangeLanguage(locale.code)}
+                                key={locale.code}
+                            >{locale.name}</li>
+                        )
+                    })
+                }
             </ul>
         </div>
     );

@@ -1,9 +1,12 @@
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
 const Tours = () => {
+    const {t} = useTranslation()
+
     return (
         <div>
-            <h1>Tours</h1>
+            <h1>{t("title.tours")}</h1>
         </div>
     );
 };

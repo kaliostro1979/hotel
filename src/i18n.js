@@ -14,10 +14,12 @@ i18n
     // learn more: https://github.com/i18next/i18next-http-backend
     // want your translations to be loaded from a professional CDN? => https://github.com/locize/react-tutorial#step-2---use-the-locize-cdn
     .use(Backend)
+
     // detect user language
     // learn more: https://github.com/i18next/i18next-browser-languageDetector
     // .use(LanguageDetector)
     // pass the i18n instance to react-i18next.
+    .use(LanguageDetector)
     .use(initReactI18next)
     // init i18next
     // for all options read: https://www.i18next.com/overview/configuration-options

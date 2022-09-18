@@ -1,0 +1,27 @@
+.FooterLinksList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FooterLinksListItem {
+  padding: 0 15px;
+  font-size: 18px;
+  border-right: 2px solid $color-black;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+
+  &.Dark {
+    a {
+      color: $color-white;
+    }
+
+    border-color: $color-white;
+  }
+}

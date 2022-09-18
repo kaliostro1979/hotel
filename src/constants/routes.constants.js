@@ -50,3 +50,30 @@ export const ROUTES = [
         element: <UpcomingProjects/>,
     },
 ]
+
+export const FOOTER_ROUTES = [
+    {
+        path: '/about',
+        to: '/',
+        name: 'ABOUT',
+        element: <About/>,
+    },
+    {
+        path: '/privacy-and-cookie',
+        to: '/',
+        name: 'Privacy and cookie',
+        element: null,
+    },
+    {
+        path: '/kantar-Policies',
+        to: '/',
+        name: 'Kantar Policies',
+        element: null,
+    },
+    {
+        path: '/terms-and-conditions',
+        to: '/',
+        name: 'Terms and Conditions',
+        element: null,
+    },
+]

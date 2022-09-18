@@ -1,9 +1,13 @@
 import React from 'react';
+import {useTranslation} from "react-i18next";
 
 const UpcomingProjects = () => {
+
+    const {t} = useTranslation()
+
     return (
         <div>
-            <h1>Upcoming Projects</h1>
+            <h1>{t("title.upcoming_projects")}</h1>
         </div>
     );
 };
