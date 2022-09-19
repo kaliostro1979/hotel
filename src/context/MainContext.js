@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 export const MainContext = createContext(null);
 
 const MainProvider = ({children})=>{
-    const currentLocale = Cookies.get("i18next")
+    const currentLocale = window.localStorage.getItem("i18nextLng")
     const [open, setOpen] = useState(false)
     const [activeLanguage, setActiveLanguage] = useState(currentLocale || "hy")
 

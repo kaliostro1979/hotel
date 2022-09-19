@@ -13,7 +13,6 @@ const LanguageSwitcher = () => {
     const handleChangeLanguage = (language) => {
         i18n.changeLanguage(language).then()
         setActiveLanguage(language)
-        Cookies.set("i18next", language)
         setOpen(false)
 
         const currentLocation = window.location.pathname.split("/")

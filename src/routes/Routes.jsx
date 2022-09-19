@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import Layout from "../components/layout/Layout";
-import {Navigate, Route, Routes} from "react-router-dom";
+import {Navigate, Outlet, Route, Routes} from "react-router-dom";
 import Home from "../pages/Home";
 import Hostel from "../pages/Hostel";
 import About from "../pages/About";
@@ -10,7 +10,7 @@ import Stories from "../pages/Stories";
 import UpcomingProjects from "../pages/UpcomingProjects";
 import {MainContext} from "../context/MainContext";
 import PageNotFound from "../pages/404";
-import {useTranslation} from "react-i18next";
+import Page from "../pages/dynamic-page/Page";
 
 const RoutesModule = () => {
     const {activeLanguage} = useContext(MainContext)
@@ -27,6 +27,9 @@ const RoutesModule = () => {
                     <Route path={`tours`} element={<Tours/>}/>
                     <Route path={`stories`} element={<Stories/>}/>
                     <Route path={`upcoming-projects`} element={<UpcomingProjects/>}/>
+                    <Route path={`page`}>
+                        <Route path={`:id`} element={<Page/>}/>
+                    </Route>
                     <Route path={"*"} element={<PageNotFound/>}/>
                 </Route>
             </Routes>

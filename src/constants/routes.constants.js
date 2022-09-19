@@ -5,6 +5,7 @@ import Booking from "../pages/Booking";
 import Tours from "../pages/Tours";
 import Stories from "../pages/Stories";
 import UpcomingProjects from "../pages/UpcomingProjects";
+import Page from "../pages/dynamic-page/Page";
 
 export const ROUTES = [
     {
@@ -53,27 +54,27 @@ export const ROUTES = [
 
 export const FOOTER_ROUTES = [
     {
-        path: '/about',
+        path: 'about',
         to: '/',
         name: 'ABOUT',
         element: <About/>,
     },
     {
-        path: '/privacy-and-cookie',
+        path: 'privacy-and-cookie',
         to: '/',
         name: 'Privacy and cookie',
-        element: null,
+        element: <Page path={"privacy-and-cookie"}/>,
     },
     {
-        path: '/kantar-Policies',
+        path: 'kantar-policies',
         to: '/',
         name: 'Kantar Policies',
-        element: null,
+        element: <Page path={'kantar-policies'}/>,
     },
     {
-        path: '/terms-and-conditions',
+        path: 'terms-and-conditions',
         to: '/',
         name: 'Terms and Conditions',
-        element: null,
+        element: <Page path={'terms-and-conditions'}/>,
     },
 ]
