@@ -4,9 +4,12 @@ import ContactsInformation from "./ContactsInformation";
 
 const ContactUs = () => {
   return (
-    <div className={"ContactUs"}>
-      <ContactForm/>
-      <ContactsInformation/>
+    <div className={"ContactUsContainer"}>
+        <h2 className={"ContactUsTitle"}>Contact Us</h2>
+        <div className={"ContactUs"}>
+            <ContactForm/>
+            <ContactsInformation/>
+        </div>
     </div>
   );
 };

@@ -3,3 +3,20 @@
     bottom: 0;
     width: 100%;
 }
+
+.FooterSocial {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MiniFooter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 5px 70px;
+    background-color: $brand-green-light;
+    color: $color-white;
+}

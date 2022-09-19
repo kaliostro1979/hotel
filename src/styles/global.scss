@@ -7,8 +7,6 @@
     font-family: "Segoe UI", sans-serif;
 }
 
-
-
 #root {
     position: relative;
     min-height: 100vh;
@@ -25,4 +23,9 @@ a {
 
 ul {
     list-style: none;
+}
+
+.Container {
+    margin: 0 auto;
+    padding: 0 70px;
 }

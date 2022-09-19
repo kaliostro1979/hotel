@@ -1,0 +1,13 @@
+.ScrollUp {
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 26px 10px;
+    border-radius: 30px;
+    background-color: $brand-primary;
+    z-index: 10;
+}

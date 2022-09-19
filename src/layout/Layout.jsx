@@ -2,6 +2,7 @@ import Header from "../components/header/Header";
 import NavigationMenuWrapper from "../components/navigation-menu/NavigationMenuWrapper";
 import Footer from "../components/footer/Footer";
 import { useLocation } from "react-router-dom";
+import ScrollUp from "../components/UI/ScrollUp";
 
 
 const Layout = ({ children }) => {
@@ -13,10 +14,12 @@ const Layout = ({ children }) => {
             <Header light={true}/>
             <NavigationMenuWrapper/>
             <main className={"Wrapper"}>
-                {children}
+                <div className="Container">
+                    {children}
+                </div>
             </main>
             {
-                pathLength > 2 ? <Footer/> : null
+                pathLength > 2 ? (<><Footer/> <ScrollUp/></>) : null
             }
         </>
     );

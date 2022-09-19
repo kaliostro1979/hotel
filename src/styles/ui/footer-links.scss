@@ -1,11 +1,17 @@
+.FooterLinksListContainer {
+  padding: 20px 0 30px;
+}
+
 .FooterLinksList {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .FooterLinksListItem {
   padding: 0 15px;
   font-size: 18px;
+  font-weight: 600;
   border-right: 2px solid $color-black;
 
   &:first-child {

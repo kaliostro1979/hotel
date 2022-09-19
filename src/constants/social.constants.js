@@ -18,5 +18,10 @@ export const SOCIAL_NETWORKS = [
     name: "tripadvisor",
     link: "#",
     icon: "<TripadvisorIcon/>"
+  },
+  {
+    name: "soc-k",
+    link: "#",
+    icon: "<TripadvisorIcon/>"
   }
 ]
