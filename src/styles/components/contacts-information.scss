@@ -1,0 +1,43 @@
+.ContactsInformation * {
+    color: $color-white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ContactsInformation {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.ContactsInformationWrapper {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+}
+
+.ContactsInformationItem {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.ContactsInformationPhones {
+    display: flex;
+    align-items: flex-start;
+
+    p {
+        color: $color-white;
+        opacity: .5;
+        text-transform: uppercase;
+    }
+}
+
+.ContactsInformationEmail, .ContactsInformationAddress {
+
+    a, p {
+        text-decoration: underline;
+    }
+}

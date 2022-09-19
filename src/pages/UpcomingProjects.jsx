@@ -7,7 +7,7 @@ const UpcomingProjects = () => {
 
     return (
         <div>
-            <h1>{t("title.upcoming_projects")}</h1>
+            <h1>{t("title.upcoming projects")}</h1>
         </div>
     );
 };

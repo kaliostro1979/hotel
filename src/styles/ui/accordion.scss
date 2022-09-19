@@ -1,17 +1,18 @@
 .AccordionItem {
+  padding-top: 15px;
+  margin-bottom: 15px;
+  background-color: $color-white;
 
   &.Open {
     .AccordionItemBody {
-      max-height: 1000px;
-      padding: 15px 0;
-      transition: all .3s ease;
+      max-height: 500px;
+      transition: all .5s ease-in-out;
     }
   }
 }
 
 .AccordionItemHeader {
   position: relative;
-  padding: 29px 0 9px;
   border-bottom: 1px solid $brand-primary;
   font-size: 18px;
   font-weight: 700;
@@ -30,8 +31,20 @@
   }
 }
 
+.AccordionItemHeaderTitle {
+  margin-bottom: 9px;
+}
+
 .AccordionItemBody {
   max-height: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
   overflow: hidden;
-  transition: all .3s ease;
+  transition: all .5s ease-in-out;
+
+  p {
+    padding-top: 15px;
+    letter-spacing: 0.05em;
+  }
 }

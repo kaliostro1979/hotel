@@ -12,7 +12,9 @@ const FooterLinksList = ({light}) => {
                 {
                     FOOTER_ROUTES.map(route=>{
                         return <li className={light ? "FooterLinksListItem" : "FooterLinksListItem Dark"} key={route.name}>
-                            <Link to={`${activeLanguage}/page/${route.path}`} onClick={()=>setOpen(false)}>{route.name}</Link>
+                            <Link
+                              to={`${activeLanguage}${route.dynamic ? "/page/" : "/"}${route.path}`}
+                              onClick={()=>setOpen(false)}>{route.name}</Link>
                         </li>
                     })
                 }

@@ -1,0 +1,44 @@
+.ContactFormContainer {
+
+}
+
+.ContactFormRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ContactFormField {
+  width: 100%;
+  margin-bottom: 29px;
+  padding: 9px 0;
+  border: none;
+  border-bottom: 1px solid $brand-primary;
+
+  &::placeholder {
+    font-size: 18px;
+    color: $brand-primary;
+    opacity: .5;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.ContactFormButton {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $brand-green-light;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.RightArrowIcon {
+  margin-left: 5px;
+}

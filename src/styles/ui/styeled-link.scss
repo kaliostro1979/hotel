@@ -36,10 +36,10 @@
   }
 
   &.Dark {
-    color: #000000;
+    color: $brand-primary;
 
     &:after, &:before {
-      border-color: #000000;
+      border-color: $brand-primary;
     }
   }
 }

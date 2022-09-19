@@ -58,23 +58,27 @@ export const FOOTER_ROUTES = [
         to: '/',
         name: 'ABOUT',
         element: <About/>,
+        dynamic: false
     },
     {
         path: 'privacy-and-cookie',
         to: '/',
         name: 'Privacy and cookie',
-        element: <Page path={"privacy-and-cookie"}/>,
+        element: <Page/>,
+        dynamic: true
     },
     {
         path: 'kantar-policies',
         to: '/',
         name: 'Kantar Policies',
-        element: <Page path={'kantar-policies'}/>,
+        element: <Page/>,
+        dynamic: true
     },
     {
         path: 'terms-and-conditions',
         to: '/',
         name: 'Terms and Conditions',
-        element: <Page path={'terms-and-conditions'}/>,
+        element: <Page/>,
+        dynamic: true
     },
 ]

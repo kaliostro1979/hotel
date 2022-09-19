@@ -1,6 +1,8 @@
 import React from 'react';
 import {useParams} from "react-router-dom";
 import AccordionContainer from "../../components/UI/accordion/AccordionContainer";
+import ContactForm from "../../components/UI/ContactForm";
+import ContactUs from "../../components/contact-us/ContactUs";
 
 const pages = {
     "privacy-and-cookie": {
@@ -16,14 +18,14 @@ const pages = {
 }
 
 
-const Page = ({path}) => {
+const Page = () => {
     const params = useParams()
 
+    if (!pages[params.id])return null
     return (
         <div>
             <h1>{pages[params.id].title}</h1>
             <p>{pages[params.id].content}</p>
-            <AccordionContainer/>
         </div>
     );
 };

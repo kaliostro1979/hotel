@@ -1,9 +1,11 @@
 import React from 'react';
 import {CONTACTS} from "../../constants/contacts.constant";
 
-const Contacts = () => {
+const Contacts = ({backgroundImage}) => {
     return (
-        <div className={"Contacts"}>
+        <div
+          className={"Contacts"}
+          style={{backgroundImage: backgroundImage ? `url(${backgroundImage})` : "none"}}>
             <div className={"ContactsTitle ContactsItem"}>
                 <h2>Contacts</h2>
             </div>

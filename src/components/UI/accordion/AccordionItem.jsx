@@ -8,7 +8,7 @@ const AccordionItem = ({title, text}) => {
     return (
         <div className={!isOpen ? "AccordionItem" : "AccordionItem Open"}>
             <div className={"AccordionItemHeader"} onClick={() => setIsOpen(!isOpen)}>
-                <span>{title}</span>
+                <h4 className={"AccordionItemHeaderTitle"}>{title}</h4>
                 <div className={"AccordionItemHeaderIcon"}>
                     {
                         isOpen ? <MinusIcon/> : <PlusIcon/>

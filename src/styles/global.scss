@@ -7,8 +7,15 @@
     font-family: "Segoe UI", sans-serif;
 }
 
+
+
+#root {
+    position: relative;
+    min-height: 100vh;
+}
+
 .Wrapper {
-    padding-top: 85px;
+    padding-top: 78px;
 }
 
 a {

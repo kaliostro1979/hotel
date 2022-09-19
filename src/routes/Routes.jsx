@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import Layout from "../components/layout/Layout";
+import Layout from "../layout/Layout";
 import {Navigate, Outlet, Route, Routes} from "react-router-dom";
 import Home from "../pages/Home";
 import Hostel from "../pages/Hostel";
