@@ -9,8 +9,8 @@ import Page from "../pages/dynamic-page/Page";
 
 export const ROUTES = [
     {
-        path: '/',
-        to: '/',
+        path: '',
+        to: '',
         name: 'HOME',
         element: <Home/>,
     },

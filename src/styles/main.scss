@@ -9,6 +9,7 @@
 @import "ui/accordion";
 @import "ui/contact-form";
 @import "ui/scroll-up";
+@import "ui/image";
 
 //Components
 @import "components/page-list";
@@ -16,7 +17,12 @@
 @import "components/footer";
 @import "components/social-icons";
 @import "components/contact-us";
+@import "components/media-gallery";
 @import "components/contacts-information";
+@import "components/accordion-with-image";
 @import "components/navigation/navigation";
 @import "components/navigation/navigation-list";
 @import "components/navigation/navigation-footer";
+
+//Pages
+@import "pages/home";

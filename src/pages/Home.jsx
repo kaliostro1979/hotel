@@ -3,7 +3,9 @@ import PageList from "../components/page-list/PageList";
 
 const Home = () => {
   return (
-    <PageList/>
+    <div className={"Home"}>
+      <PageList/>
+    </div>
   );
 };
 

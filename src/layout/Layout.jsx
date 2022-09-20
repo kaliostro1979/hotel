@@ -14,9 +14,7 @@ const Layout = ({ children }) => {
             <Header light={true}/>
             <NavigationMenuWrapper/>
             <main className={"Wrapper"}>
-                <div className="Container">
-                    {children}
-                </div>
+                {children}
             </main>
             {
                 pathLength > 2 ? (<><Footer/> <ScrollUp/></>) : null
