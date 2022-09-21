@@ -6,7 +6,7 @@ const About = () => {
     const {t}  = useTranslation()
 
     return (
-        <div>
+        <div className={"Container"}>
             <h1>{t("title.about")}</h1>
         </div>
     );

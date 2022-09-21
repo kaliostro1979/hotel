@@ -5,7 +5,7 @@ const Tours = () => {
     const {t} = useTranslation()
 
     return (
-        <div>
+        <div className={"Container"}>
             <h1>{t("title.tours")}</h1>
         </div>
     );

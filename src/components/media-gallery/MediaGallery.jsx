@@ -5,7 +5,7 @@ import MediaGalleryItem from "./MediaGalleryItem";
 
 const MediaGallery = () => {
     return (
-        <div className={"MediaGallery"}>
+        <div className={"MediaGallery Section"}>
             <Slider
                 dataArray={GALLERY_ITEMS}
                 Component={MediaGalleryItem}

@@ -16,8 +16,8 @@ const Slider = ({
         <Swiper
             spaceBetween={spaceBetween}
             slidesPerView={slidesPerView}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+           /* onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}*/
             loop={loop}
             className={className}
             centeredSlides={centeredSlides}
@@ -25,7 +25,7 @@ const Slider = ({
             {
                 dataArray && dataArray.map(slide => {
                     return (
-                        <SwiperSlide key={slide.name} className={sliderClassName}>
+                        <SwiperSlide key={slide.id} className={sliderClassName}>
                             <Component data={slide}/>
                         </SwiperSlide>
                     )
