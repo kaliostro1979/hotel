@@ -6,7 +6,8 @@ const RoomsGallerySlice = createSlice({
     name: "rooms gallery",
     initialState: {
         rooms_name: [],
-        active_room_images: []
+        active_room_images: [],
+        isLoading: false
     },
     reducers: {
         getRoomsName: (state, action) => {

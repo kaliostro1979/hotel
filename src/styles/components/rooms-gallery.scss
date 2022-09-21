@@ -4,13 +4,10 @@
 }
 
 .RoomsGallerySliderItem {
+    width: max-content !important;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-
-    &.swiper-slide-active {
-        text-decoration: underline;
-    }
 }
 
 .ActiveRoomImagesContainer{
@@ -41,6 +38,14 @@
     }
 }
 
+.RoomsNamesItem {
+    cursor: pointer;
+
+    &.ActiveRoom {
+        text-decoration: underline;
+    }
+}
+
 .RoomsGallerySliderArrows {
     position: absolute;
     top: 50%;
@@ -52,8 +57,13 @@
     background: transparent;
     border: none;
     color: $brand-green-light;
+    cursor: pointer;
 
     &:first-child {
         margin-right: 30px;
+    }
+
+    &.swiper-button-disabled {
+        opacity: .6;
     }
 }

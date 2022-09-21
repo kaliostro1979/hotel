@@ -7,9 +7,21 @@ const MainProvider = ({children})=>{
     const currentLocale = window.localStorage.getItem("i18nextLng")
     const [open, setOpen] = useState(false)
     const [activeLanguage, setActiveLanguage] = useState(currentLocale || "hy")
+    const [swiper, setSwiper] = useState(null);
+    const [activeRoomIndex, setActiveRoomIndex] = useState(0)
 
     return (
-        <MainContext.Provider value={{open, setOpen, activeLanguage, setActiveLanguage, Cookies}}>
+        <MainContext.Provider value={{
+            open,
+            setOpen,
+            activeLanguage,
+            setActiveLanguage,
+            Cookies,
+            swiper,
+            setSwiper,
+            activeRoomIndex,
+            setActiveRoomIndex
+        }}>
             {children}
         </MainContext.Provider>
     )

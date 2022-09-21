@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from "../Slider";
+import Slider from "../UI/slider/Slider";
 import { GALLERY_ITEMS } from "../../constants/gallery.constants";
 import MediaGalleryItem from "./MediaGalleryItem";
 

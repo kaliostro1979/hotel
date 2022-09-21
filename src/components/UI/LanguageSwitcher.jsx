@@ -6,7 +6,7 @@ import {useTranslation} from "react-i18next";
 
 
 const LanguageSwitcher = () => {
-    const {activeLanguage, setActiveLanguage, setOpen, Cookies} = useContext(MainContext)
+    const {activeLanguage, setActiveLanguage, setOpen} = useContext(MainContext)
     const {i18n} = useTranslation()
     const navigate = useNavigate()
 

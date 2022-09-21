@@ -3,7 +3,7 @@ import ContactUs from "../contact-us/ContactUs";
 import SocialIcons from "../UI/SocialIcons";
 import MiniFooter from "./MiniFooter";
 import FooterLinksList from "../UI/FooterLinksList";
-import Slider from "../Slider";
+import Slider from "../UI/slider/Slider";
 import FooterSlide from "./FooterSlide";
 import { ROUTES } from "../../constants/routes.constants";
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import {useParams} from "react-router-dom";
-import AccordionContainer from "../../components/UI/accordion/AccordionContainer";
-import ContactForm from "../../components/UI/ContactForm";
-import ContactUs from "../../components/contact-us/ContactUs";
+
 
 const pages = {
     "privacy-and-cookie": {

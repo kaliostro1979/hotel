@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import Layout from "../layout/Layout";
-import {Navigate, Outlet, Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import Home from "../pages/Home";
 import Hostel from "../pages/Hostel";
 import About from "../pages/About";

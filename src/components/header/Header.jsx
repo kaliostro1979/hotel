@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import BurgerMenuIcon from "../../icons/BurgerMenuIcon";
 import Logo from "../../icons/Logo";
 import StyledLink from "../UI/StyledLink";
