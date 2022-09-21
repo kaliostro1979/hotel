@@ -45,12 +45,14 @@ const ContactForm = () => {
             {errors.email && <Error text={"Email is required"}/>}
           </div>
         </div>
-        <input
-          {...register("message", { required: true })}
-          className={"ContactFormField"}
-          placeholder={"Message*"}
-        />
-        {errors.message && <Error text={"Message is required"}/>}
+        <div className={"ContactFormGroup"}>
+          <input
+              {...register("message", { required: true })}
+              className={"ContactFormField"}
+              placeholder={"Message*"}
+          />
+          {errors.message && <Error text={"Message is required"}/>}
+        </div>
         <button type="submit" className={"ContactFormButton"}>
           Send
           <RightArrowIcon/>

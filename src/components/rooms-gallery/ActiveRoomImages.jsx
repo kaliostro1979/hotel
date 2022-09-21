@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {getActiveRoomImages, getRoomsName} from "../../redux/slices/rooms.gallery.slice";
+import {getActiveRoomImages, getRoomsName} from "../../redux/slices/rooms.slice";
 
 const ActiveRoomImages = () => {
     const [activeIndex, setActiveIndex] = useState(0)

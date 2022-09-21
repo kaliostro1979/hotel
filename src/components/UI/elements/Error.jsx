@@ -2,7 +2,7 @@ import React from 'react';
 
 const Error = ({text}) => {
   return (
-    <div>
+    <div className={"FormError"}>
       <span>{text}</span>
     </div>
   );

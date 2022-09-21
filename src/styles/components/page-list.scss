@@ -16,6 +16,7 @@
   background-attachment: fixed;
   cursor: pointer;
   filter: grayscale(1);
+  overflow: hidden;
 
   &:not(:first-child) {
     border-left: 2px solid #ffffff;
@@ -63,6 +64,10 @@
     flex-grow: 1;
     filter: grayscale(0);
 
+    .PageListItemIconWrapper {
+      transform: scale(1.5);
+    }
+
     .ListItemTitleWrapper {
       top: 30px;
       writing-mode: horizontal-tb;
@@ -82,29 +87,14 @@
   }
 }
 
-/*@keyframes rotateTitle {
-  0% {
-    transform: rotate(-90deg);
-  }
-
-  80% {
-    transform: rotate(5deg);
-  }
-
-  85% {
-    transform: rotate(2deg);
-  }
-
-  90% {
-    transform: rotate(0);
-  }
-
-  95% {
-    transform: rotate(-2deg);
-  }
-
-  100% {
-    transform: rotate(0);
-  }
-}*/
+.PageListItemIconWrapper {
+  position: absolute;
+  bottom: -5px;
+  right: -12px;
+  width: 180px;
+  height: 200px;
+  transform: scale(1);
+  color: $color-white;
+  transition: all .5s ease;
+}
 

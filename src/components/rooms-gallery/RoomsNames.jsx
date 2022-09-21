@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { getActiveRoomImages } from "../../redux/slices/rooms.gallery.slice";
+import { getActiveRoomDescription, getActiveRoomImages, getActiveRoomOptions } from "../../redux/slices/rooms.slice";
 import { useDispatch } from "react-redux";
 import {MainContext} from "../../context/MainContext";
 
@@ -9,6 +9,8 @@ const RoomsNames = ({data, index}) => {
 
     const handleSlideClick = (id, index)=>{
         dispatch(getActiveRoomImages(id))
+        dispatch(getActiveRoomOptions(id))
+        dispatch(getActiveRoomDescription(id))
         setActiveRoomIndex((index))
     }
 

@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import RoomsGallerySlice from "./slices/rooms.gallery.slice";
+import RoomsGallerySlice from "./slices/rooms.slice";
 
 const rootReducer = combineReducers({
     rooms_gallery: RoomsGallerySlice

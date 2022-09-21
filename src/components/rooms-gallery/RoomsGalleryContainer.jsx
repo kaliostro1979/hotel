@@ -6,6 +6,8 @@ import SlidePrevButton from "../UI/slider/SliderPrevButton";
 import SlideNextButton from "../UI/slider/SliderNextButton";
 import {MainContext} from "../../context/MainContext";
 import ActiveRoomImages from "./ActiveRoomImages";
+import RoomOptions from "./RoomOptions";
+import RoomDetails from "./RoomDetails";
 
 const RoomsGalleryContainer = () => {
     const {setSwiper} = useContext(MainContext)
@@ -37,6 +39,12 @@ const RoomsGalleryContainer = () => {
             </div>
             <div className={"ActiveRoomImagesContainer"}>
                 <ActiveRoomImages/>
+            </div>
+            <div>
+                <RoomOptions/>
+            </div>
+            <div className={"RoomDetailsWrapper"}>
+                <RoomDetails/>
             </div>
         </div>
     );
