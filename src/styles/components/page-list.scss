@@ -85,11 +85,9 @@
 
 .PageListItemIconWrapper {
   position: absolute;
-  bottom: -5px;
-  right: -12px;
-  min-width: 180px;
-  height: 200px;
+  bottom: 0;
+  right: 0;
+  width: 185px;
   color: $color-white;
   transition: all .5s ease;
 }
-

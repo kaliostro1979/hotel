@@ -1,12 +1,13 @@
 import React from 'react';
-import {useTranslation} from "react-i18next";
+import HeroBanner from "../components/hero-banner/HeroBanner";
+import {usePageContent} from "../hooks/usePageContent";
 
 const Booking = () => {
-    const {t} = useTranslation()
+    const page_content = usePageContent("booking")
 
     return (
         <div className={"Container"}>
-            <h1>{t("title.booking")}</h1>
+            <HeroBanner page_content={page_content && page_content} />
         </div>
     );
 };

@@ -1,5 +1,5 @@
-import React, {useContext, useRef} from 'react';
-import { useSelector } from "react-redux";
+import React, {useContext, useEffect, useRef} from 'react';
+import {useDispatch, useSelector} from "react-redux";
 import Slider from "../UI/slider/Slider";
 import RoomsNames from "./RoomsNames";
 import SlidePrevButton from "../UI/slider/SliderPrevButton";
@@ -8,10 +8,10 @@ import {MainContext} from "../../context/MainContext";
 import ActiveRoomImages from "./ActiveRoomImages";
 import RoomOptions from "./RoomOptions";
 import RoomDetails from "./RoomDetails";
+import {getRoomsName} from "../../redux/slices/rooms.slice";
 
-const RoomsGalleryContainer = () => {
+const RoomsGalleryContainer = ({rooms_names}) => {
     const {setSwiper} = useContext(MainContext)
-    const rooms_names = useSelector(state => state.main.rooms_gallery.rooms_name)
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
@@ -38,13 +38,13 @@ const RoomsGalleryContainer = () => {
                 </div>
             </div>
             <div className={"ActiveRoomImagesContainer"}>
-                <ActiveRoomImages/>
+                <ActiveRoomImages rooms_names={rooms_names && rooms_names}/>
             </div>
             <div>
-                <RoomOptions/>
+                <RoomOptions rooms_names={rooms_names && rooms_names}/>
             </div>
             <div className={"RoomDetailsWrapper"}>
-                <RoomDetails/>
+                <RoomDetails rooms_names={rooms_names && rooms_names}/>
             </div>
         </div>
     );

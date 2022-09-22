@@ -2,13 +2,11 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { getActiveRoomOptions, getRoomsName } from "../../redux/slices/rooms.slice";
 
-const RoomOptions = () => {
-    const rooms_names = useSelector(state => state.main.rooms_gallery.rooms_name)
+const RoomOptions = ({rooms_names}) => {
     const rooms_options = useSelector(state => state.main.rooms_gallery.active_room_options)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(getRoomsName())
         if (rooms_names.length) {
             dispatch(getActiveRoomOptions(rooms_names[0].id))
         }
