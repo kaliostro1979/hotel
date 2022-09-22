@@ -64,10 +64,6 @@
     flex-grow: 1;
     filter: grayscale(0);
 
-    .PageListItemIconWrapper {
-      transform: scale(1.5);
-    }
-
     .ListItemTitleWrapper {
       top: 30px;
       writing-mode: horizontal-tb;
@@ -91,9 +87,8 @@
   position: absolute;
   bottom: -5px;
   right: -12px;
-  width: 180px;
+  min-width: 180px;
   height: 200px;
-  transform: scale(1);
   color: $color-white;
   transition: all .5s ease;
 }

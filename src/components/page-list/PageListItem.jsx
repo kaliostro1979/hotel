@@ -23,7 +23,7 @@ const PageListItem = ({text, callBack, activeIndex, image, content, left, index,
                 <StyledLink text={"Booking"} url={"#"}/>
             </div>
             <div className="PageListItemIconWrapper">
-                <svg className="PageListItemIcon" viewBox="0 0 26 25">
+                <svg className="PageListItemIcon">
                     <use xlinkHref={`#${icon}`} />
                 </svg>
             </div>
