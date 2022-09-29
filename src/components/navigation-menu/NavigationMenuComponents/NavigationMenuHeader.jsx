@@ -3,7 +3,7 @@ import Header from "../../header/Header";
 const NavigationMenuHeader = () => {
 
     return (
-      <Header light={false}/>
+      <Header light={false} navigationLink={true}/>
     );
 };
 

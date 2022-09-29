@@ -13,5 +13,9 @@
     "hostel": "Hostel",
     "tours": "Tours",
     "stories": "Stories"
+  },
+  "buttons": {
+    "booking": "Booking",
+    "join our team": "Join our team"
   }
 }

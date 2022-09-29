@@ -6,12 +6,14 @@ import HeroBanner from "../components/hero-banner/HeroBanner";
 import {getRoomsName} from "../redux/slices/rooms.slice";
 import {useDispatch, useSelector} from "react-redux";
 import {usePageContent} from "../hooks/usePageContent";
+import {GALLERY_ITEMS} from "../mock_data/gallery.data";
 
 const Hostel = () => {
 
     const rooms_names = useSelector(state => state.main.rooms_gallery.rooms_name)
     const dispatch = useDispatch()
     const page_content = usePageContent("hostel")
+    const dataArray = GALLERY_ITEMS
 
     useEffect(() => {
         dispatch(getRoomsName())
@@ -21,7 +23,7 @@ const Hostel = () => {
         <>
             <HeroBanner page_content={page_content && page_content} />
             <RoomsGalleryContainer rooms_names={rooms_names}/>
-            <MediaGallery/>
+            <MediaGallery dataArray={dataArray}/>
             <ImageWithAccordion/>
         </>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import AccordionItem from "./AccordionItem";
-import { ACCORDION_ITEMS } from "../../../constants/accordion.constants";
+import { ACCORDION_ITEMS } from "../../../mock_data/accordion.data";
 
 const AccordionContainer = ({title, text}) => {
     return (

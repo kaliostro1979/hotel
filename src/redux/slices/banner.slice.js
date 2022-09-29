@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {BANNERS} from "../../constants/hero.banner.constants";
+import {BANNERS} from "../../mock_data/hero.banner.data";
 
 const BannerSlice = createSlice({
     name: "banner",

@@ -63,3 +63,14 @@
   font-weight: normal;
   font-style: italic;
 }
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../assets/fonts/SegoeUIBlack.woff2') format('woff2'),
+  url('../assets/fonts/SegoeUIBlack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+

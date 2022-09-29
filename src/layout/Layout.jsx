@@ -3,6 +3,7 @@ import NavigationMenuWrapper from "../components/navigation-menu/NavigationMenuW
 import Footer from "../components/footer/Footer";
 import { useLocation } from "react-router-dom";
 import ScrollUp from "../components/UI/ScrollUp";
+import Overlay from "../components/UI/modal/Overlay";
 
 
 const Layout = ({ children }) => {
@@ -11,7 +12,8 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Header light={true}/>
+            <Overlay/>
+            <Header light={true} navigationLink={false}/>
             <NavigationMenuWrapper/>
             <main className={"Wrapper"}>
                 {children}

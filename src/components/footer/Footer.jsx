@@ -15,7 +15,6 @@ const Footer = () => {
                 <div className={"FooterSocial"}>
                     <SocialIcons light={false}/>
                 </div>
-                <FooterLinksList light={true}/>
             </div>
             <Slider
                 Component={FooterSlide}
@@ -23,9 +22,11 @@ const Footer = () => {
                 className={"FooterSlider"}
                 sliderClassName={"FooterSliderItem"}
                 loop={true}
-                slidesPerView={10}
+                slidesPerView={"auto"}
                 centeredSlides={true}
+                spaceBetween={50}
             />
+            <FooterLinksList light={true}/>
             <MiniFooter/>
         </footer>
     );

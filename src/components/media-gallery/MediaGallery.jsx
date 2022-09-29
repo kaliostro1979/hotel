@@ -1,13 +1,12 @@
 import React from 'react';
 import Slider from "../UI/slider/Slider";
-import { GALLERY_ITEMS } from "../../constants/gallery.constants";
 import MediaGalleryItem from "./MediaGalleryItem";
 
-const MediaGallery = () => {
+const MediaGallery = ({dataArray}) => {
     return (
         <div className={"MediaGallery Section"}>
             <Slider
-                dataArray={GALLERY_ITEMS}
+                dataArray={dataArray}
                 Component={MediaGalleryItem}
                 sliderClassName={"MediaSlider"}
                 slidesPerView={"auto"}

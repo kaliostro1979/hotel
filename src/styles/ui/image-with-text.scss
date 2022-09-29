@@ -1,0 +1,72 @@
+.ImageWithTextItemWrapper {
+  display: inline-flex;
+  margin-bottom: 55px;
+
+  &:first-child {
+    margin-top: 55px;
+  }
+
+  &:nth-child(odd){
+    .ImageWithTextMeta {
+      order: 1;
+    }
+    .ImageWithTextImage {
+      order: 2;
+    }
+  }
+
+  &:nth-child(even){
+    .ImageWithTextMeta {
+      order: 2;
+    }
+    .ImageWithTextImage {
+      order: 1;
+    }
+  }
+}
+
+
+.ImageWithTextElement {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.ImageWithTextMeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 71px;
+  padding-right: 27px;
+}
+
+.ImageWithTextTitle {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ImageWithTextImage {
+  position: relative;
+  width: 100%;
+  padding-top: 610px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+.ImageWithTextUrl {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 30px;
+  color: $brand-green-light;
+}

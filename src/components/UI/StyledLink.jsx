@@ -1,10 +1,17 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
-const StyledLink = ({text, url, dark}) => {
+const StyledLink = ({text, url, dark, callBack, navigationLink}) => {
+    const {t} = useTranslation()
     return (
-        <a href={url} className={dark ? "Button Dark" : "Button"}>
-            {text}
-        </a>
+        <Link
+            to={url}
+            className={dark ? "Button Dark" : "Button"}
+            onClick={navigationLink ? callBack : null}
+        >
+            {t(`buttons.${text.toLowerCase()}`)}
+        </Link>
     );
 };
 

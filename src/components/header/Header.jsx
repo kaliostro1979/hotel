@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import {MainContext} from "../../context/MainContext";
 import CloseIcon from "../../icons/CloseIcon";
 
-const Header = ({light}) => {
+const Header = ({light, navigationLink}) => {
     const {setOpen, open, activeLanguage} = useContext(MainContext)
 
     const toggleMenu = ()=>{
@@ -21,7 +21,7 @@ const Header = ({light}) => {
       <Link to={`/${activeLanguage}`} className={"HeaderMenuLogo"} onClick={()=>setOpen(false)}>
         <Logo/>
       </Link>
-      <StyledLink text={"Booking"} url={"#"} dark={light}/>
+      <StyledLink text={"Booking"} url={`${activeLanguage}/booking`} dark={light} callBack={toggleMenu} navigationLink={navigationLink}/>
     </header>
   );
 };

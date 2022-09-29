@@ -1,5 +1,4 @@
-import React, {useContext, useEffect, useRef} from 'react';
-import {useDispatch, useSelector} from "react-redux";
+import React, {useContext, useRef} from 'react';
 import Slider from "../UI/slider/Slider";
 import RoomsNames from "./RoomsNames";
 import SlidePrevButton from "../UI/slider/SliderPrevButton";
@@ -8,7 +7,6 @@ import {MainContext} from "../../context/MainContext";
 import ActiveRoomImages from "./ActiveRoomImages";
 import RoomOptions from "./RoomOptions";
 import RoomDetails from "./RoomDetails";
-import {getRoomsName} from "../../redux/slices/rooms.slice";
 
 const RoomsGalleryContainer = ({rooms_names}) => {
     const {setSwiper} = useContext(MainContext)
