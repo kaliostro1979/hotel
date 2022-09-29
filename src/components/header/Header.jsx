@@ -6,22 +6,24 @@ import { Link } from "react-router-dom";
 import {MainContext} from "../../context/MainContext";
 import CloseIcon from "../../icons/CloseIcon";
 
-const Header = ({light, navigationLink}) => {
+const Header = ({light, navigationLink, buttonText, url, callBack}) => {
     const {setOpen, open, activeLanguage} = useContext(MainContext)
-
-    const toggleMenu = ()=>{
-        setOpen(!open)
-    }
 
     return (
     <header className={light ? "Header" : "Header Dark"}>
-     <div className={"HeaderMenuIconWrapper"} onClick={toggleMenu}>
+     <div className={"HeaderMenuIconWrapper"} onClick={callBack}>
          {light ? <BurgerMenuIcon/> : <CloseIcon/>}
      </div>
       <Link to={`/${activeLanguage}`} className={"HeaderMenuLogo"} onClick={()=>setOpen(false)}>
         <Logo/>
       </Link>
-      <StyledLink text={"Booking"} url={`${activeLanguage}/booking`} dark={light} callBack={toggleMenu} navigationLink={navigationLink}/>
+      <StyledLink
+          text={buttonText}
+          url={`${activeLanguage}/${url}`}
+          dark={light}
+          callBack={callBack}
+          navigationLink={navigationLink}
+      />
     </header>
   );
 };

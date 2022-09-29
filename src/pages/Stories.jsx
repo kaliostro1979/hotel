@@ -1,13 +1,14 @@
 import React from 'react';
 import {useTranslation} from "react-i18next";
+import HeroBanner from "../components/hero-banner/HeroBanner";
+import {usePageContent} from "../hooks/usePageContent";
 
 const Stories = () => {
     const {t} = useTranslation()
+    const page_content = usePageContent("stories")
 
     return (
-        <div className={"Container"}>
-            <h1>{t("title.stories")}</h1>
-        </div>
+        <HeroBanner page_content={page_content && page_content} />
     );
 };
 

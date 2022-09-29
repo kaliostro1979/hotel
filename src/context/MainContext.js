@@ -9,6 +9,7 @@ const MainProvider = ({children})=>{
     const [activeLanguage, setActiveLanguage] = useState(currentLocale || "hy")
     const [swiper, setSwiper] = useState(null);
     const [activeRoomIndex, setActiveRoomIndex] = useState(0)
+    const [isShow, setIsShow] = useState(false)
 
     return (
         <MainContext.Provider value={{
@@ -20,7 +21,9 @@ const MainProvider = ({children})=>{
             swiper,
             setSwiper,
             activeRoomIndex,
-            setActiveRoomIndex
+            setActiveRoomIndex,
+            isShow,
+            setIsShow
         }}>
             {children}
         </MainContext.Provider>

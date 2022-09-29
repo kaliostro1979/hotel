@@ -54,3 +54,16 @@
     transform: translateX(-50%);
   }
 }
+
+.HeroBannerWithIcon{
+  position: relative;
+
+  .Icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 316px;
+    height: 577px;
+    color: $color-white;
+  }
+}

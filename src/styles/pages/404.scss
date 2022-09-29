@@ -1,0 +1,45 @@
+.NotFound {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding-top: 78px;
+  background-color: $color-black;
+  z-index: 1000;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.NotFoundContent {
+  margin-top: 140px;
+  color: $color-white;
+  text-align: center;
+
+  h1 {
+    font-size: 45px;
+    font-weight: 900;
+    color: $brand-green;
+    text-transform: uppercase;
+    margin: 40px 0;
+  }
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: $brand-green;
+    text-transform: uppercase;
+
+    .RightArrowIcon{
+      width: 30px;
+      height: 12px;
+    }
+  }
+}

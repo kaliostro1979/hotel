@@ -29,6 +29,15 @@ svg {
     height: 100%;
 }
 
+button {
+    border: none;
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
 .Container {
     margin: 0 auto;
     padding: 0 70px;
@@ -36,4 +45,17 @@ svg {
 
 .Section {
     margin: 55px 0;
+}
+
+main {
+    &[data-modal="true"] {
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+    }
+}
+
+body {
+    &[data-modal="show"] {
+        overflow: hidden;
+    }
 }
