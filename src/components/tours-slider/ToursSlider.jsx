@@ -5,7 +5,7 @@ import {TOURS_ITEMS} from "../../mock_data/tours.data";
 import SlidePrevButton from "../UI/slider/SliderPrevButton";
 import SlideNextButton from "../UI/slider/SliderNextButton";
 
-const ToursSlider = ({title}) => {
+const ToursSlider = ({title, dataArray}) => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
@@ -19,7 +19,7 @@ const ToursSlider = ({title}) => {
                </div>
             </div>
             <Slider
-                dataArray={TOURS_ITEMS}
+                dataArray={dataArray}
                 Component={TourSliderItem}
                 className={"HotToursSlider"}
                 sliderClassName={"HotToursSliderItem"}

@@ -1,0 +1,15 @@
+.Label{
+  position: absolute;
+  display: inline-block;
+  padding: 4px 47px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: $brand-primary;
+  text-transform: uppercase;
+  background-color: $color-yellow;
+  z-index: 1;
+  transform: rotate(-45deg);
+  top: 13px;
+  left: -32px;
+}

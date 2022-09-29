@@ -46,3 +46,50 @@
   background: $brand-primary;
   color: $color-white;
 }
+
+.HotToursSliderItemFooter {
+  position: relative;
+  padding: 20px 40px 20px 10px;
+  border-bottom: 1px solid $brand-primary;
+}
+
+.HotToursSliderItemFooterIcon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.HotToursSliderItemDetailsType {
+  text-decoration: underline;
+}
+
+.HotToursSliderItemDetailsLocation{
+  margin: 10px 0 15px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.HotToursSliderItemDetailsList {
+  display: flex;
+
+  li {
+    margin-right: 18px;
+  }
+}
+
+.HotToursSliderItemDetailsListItem{
+  display: flex;
+  align-items: center;
+
+  span {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.TourPriceOld {
+  font-size: 16px;
+  text-decoration: line-through;
+}
