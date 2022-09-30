@@ -47,7 +47,7 @@ const ContactForm = () => {
         </div>
         <div className={"ContactFormGroup"}>
           <input
-              {...register("message", { required: true })}
+              {...register("email", { required: true })}
               className={"ContactFormField"}
               placeholder={"Message*"}
           />

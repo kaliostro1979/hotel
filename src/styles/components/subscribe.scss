@@ -13,7 +13,53 @@
     width: 420px;
 }
 
+.SubscribeFormInner{
+    position: relative;
+
+    .FormError {
+        bottom: -20px;
+    }
+}
+
+.SubscribeFormButton {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: transparent;
+    color: $brand-green;
+}
+
 .SubscribeFormTitle {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+
+.SubscribeFormField {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $brand-primary;
+    padding: 9px 0;
+    background: transparent;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: $brand-primary;
+        opacity: .5;
+    }
+}
+
+.SubscribeModal {
+    padding: 30px;
+    background-color: $brand-green;
+}
+
+.SubscribeModalTitle {
     font-size: 25px;
     font-weight: 600;
     letter-spacing: 0.05em;

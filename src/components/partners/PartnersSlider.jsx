@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import Slider from "../UI/slider/Slider";
-import {PARTNERS} from "../../mock_data/parners.data";
+import {PARTNERS} from "../../mock_data/partners.data";
 import PartnersSliderItem from "./PartnersSliderItem";
 import SlidePrevButton from "../UI/slider/SliderPrevButton";
 import SlideNextButton from "../UI/slider/SliderNextButton";
