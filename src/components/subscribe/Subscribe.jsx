@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import SubscribeBackground from "../../assets/images/subscribe-bgr.png"
 import { useForm } from "react-hook-form";
 import RightArrowIcon from "../../icons/RightArrowIcon";
@@ -9,6 +9,7 @@ import SubscribeModal from "./SubscribeModal";
 const Subscribe = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const {setIsShow} = useContext(MainContext)
+    const [data, setData] = useState("")
     const isValidEmail = email =>
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
             email
@@ -16,6 +17,7 @@ const Subscribe = () => {
     const onSubmit = data => {
         if (data){
             setIsShow(true)
+            setData(data)
             console.log("Data", data)
         }
     };
@@ -35,10 +37,10 @@ const Subscribe = () => {
 
     return (
         <>
-            <Modal Component={SubscribeModal} width={"600px"}/>
+            <Modal Component={SubscribeModal} width={"600px"} data={data}/>
             <div className={"Subscribe Section"} style={{backgroundImage: `url(${SubscribeBackground})`}}>
                 <div className={"SubscribeFormWrapper"}>
-                    <h3>Subscribe to our newsletter to stay in touch with the latest.</h3>
+                    <h3 className={"SubscribeFormTitle"}>Subscribe to our newsletter to stay in touch with the latest.</h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input
                             {...register("email", { required: true, validate: handleEmailValidation })}

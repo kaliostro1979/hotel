@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import {MainContext} from "../../../context/MainContext";
 import CloseIcon from "../../../icons/CloseIcon";
 
-const Modal = ({Component, width}) => {
+const Modal = ({Component, width, data}) => {
     const { isShow, setIsShow } = useContext(MainContext)
 
     const closeModalHandler = ()=>{
@@ -15,7 +15,7 @@ const Modal = ({Component, width}) => {
         <div className={"Overlay"}></div>
         <div className={isShow ? "Modal Show" : "Modal"} style={{width: width}}>
             <div className={"ModalInner"}>
-                <Component/>
+                <Component data={data}/>
                 <div className={"ModalCloseButton"} onClick={closeModalHandler}>
                     <CloseIcon/>
                 </div>
