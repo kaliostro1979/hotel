@@ -7,6 +7,9 @@ import {getRoomsName} from "../redux/slices/rooms.slice";
 import {useDispatch, useSelector} from "react-redux";
 import {usePageContent} from "../hooks/usePageContent";
 import {GALLERY_ITEMS} from "../mock_data/gallery.data";
+import { ACCORDION_ITEMS } from "../mock_data/accordion.data";
+import SlideList from "../components/page-list/SlideList";
+import { INFO_DATA_LIST } from "../mock_data/hotel.info.data";
 
 const Hostel = () => {
 
@@ -24,7 +27,8 @@ const Hostel = () => {
             <HeroBanner page_content={page_content && page_content} />
             <RoomsGalleryContainer rooms_names={rooms_names}/>
             <MediaGallery dataArray={dataArray}/>
-            <ImageWithAccordion/>
+            <SlideList sectionClass={"List SectionList"} data={INFO_DATA_LIST}/>
+            <ImageWithAccordion data={ACCORDION_ITEMS.tours}/>
         </>
     );
 };

@@ -11,7 +11,7 @@ const TourSliderItem = ({data}) => {
     return (
         <div className={"HotToursSliderItemInner"}>
             {
-                <Label text={"sale"}/>
+                data.sale ? <Label text={"sale"}/> : null
             }
             <div className={"HotToursSliderItemImage"}>
                 <img src={data.src} alt={data.name}/>

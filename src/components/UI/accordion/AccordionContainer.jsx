@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AccordionItem from "./AccordionItem";
-import { ACCORDION_ITEMS } from "../../../mock_data/accordion.data";
 
-const AccordionContainer = ({title, text}) => {
+const AccordionContainer = ({title, text, data}) => {
+    const [clicked, setClicked] = useState("0");
+
+    const handleToggle = (index) => {
+        if (clicked === index) {
+            return setClicked("0");
+        }
+        setClicked(index);
+    };
+
     return (
         <div className={"AccordionContainer"}>
             <div className={"AccordionContainerMeta"}>
@@ -10,8 +18,14 @@ const AccordionContainer = ({title, text}) => {
                 <p>{text}</p>
             </div>
           {
-            ACCORDION_ITEMS.map(item=>{
-              return  <AccordionItem text={item.content} title={item.title} key={item.id}/>
+              data.map((item, index)=>{
+              return  <AccordionItem
+                  text={item.content}
+                  title={item.title}
+                  key={item.id}
+                  index={index} callBack={handleToggle}
+                  active={clicked === index}
+              />
             })
           }
         </div>

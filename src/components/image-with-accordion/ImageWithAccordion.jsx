@@ -1,16 +1,18 @@
 import React from 'react';
 import Image from "../UI/Image";
 import AccordionContainer from "../UI/accordion/AccordionContainer";
+import { ACCORDION_ITEMS } from "../../mock_data/accordion.data";
 
-const ImageWithAccordion = () => {
+const ImageWithAccordion = ({data}) => {
+
     return (
         <div className={"Container"}>
             <div className={"ImageWithAccordion Section"}>
                 <Image
-                    image={"https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"}
+                    image={data.image}
                     alt={"hotel"}
                 />
-                <AccordionContainer title={"FAQ"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam"}/>
+                <AccordionContainer title={data.title} text={data.text} data={data.data}/>
             </div>
         </div>
     );

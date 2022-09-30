@@ -3,6 +3,19 @@
   justify-content: space-between;
   list-style: none;
   height: 100%;
+
+  &.SectionList {
+    height: 472px;
+    .ListItemTitleWrapper {
+      transform: rotate(0);
+      writing-mode: unset;
+      top: 30px;
+      left: 100%;
+    }
+    .Active {
+      filter: grayscale(1);
+    }
+  }
 }
 
 .ListItem {
@@ -68,7 +81,6 @@
       top: 30px;
       writing-mode: horizontal-tb;
       transform: rotate(0);
-      //animation: rotateTitle .8s ease-in;
       right: unset;
       left: 0;
       transition: top .5s ease, left .5s ease, right .5s ease, transform .5s ease;

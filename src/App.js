@@ -5,6 +5,7 @@ import MainProvider, {MainContext} from "./context/MainContext";
 import React from "react";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import Preloader from "./components/UI/Preloader";
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
         <Provider store={store}>
             <BrowserRouter>
                 <MainProvider>
-                    <Suspense fallback="loading">
+                    <Suspense fallback={<Preloader/>}>
                         <RoutesModule/>
                     </Suspense>
                 </MainProvider>

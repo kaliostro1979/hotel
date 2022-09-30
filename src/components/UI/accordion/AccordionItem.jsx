@@ -2,16 +2,15 @@ import React, {useState} from 'react';
 import PlusIcon from "../../../icons/PlusIcon";
 import MinusIcon from "../../../icons/MinusIcon";
 
-const AccordionItem = ({title, text}) => {
-    const [isOpen, setIsOpen] = useState(false)
+const AccordionItem = ({title, text, index, callBack, active}) => {
 
     return (
-        <div className={!isOpen ? "AccordionItem" : "AccordionItem Open"}>
-            <div className={"AccordionItemHeader"} onClick={() => setIsOpen(!isOpen)}>
+        <div className={!active ? "AccordionItem" : "AccordionItem Open"}>
+            <div className={"AccordionItemHeader"} onClick={() => callBack(index)}>
                 <h4 className={"AccordionItemHeaderTitle"}>{title}</h4>
                 <div className={"AccordionItemHeaderIcon"}>
                     {
-                        isOpen ? <MinusIcon/> : <PlusIcon/>
+                        active ? <MinusIcon/> : <PlusIcon/>
                     }
                 </div>
             </div>
