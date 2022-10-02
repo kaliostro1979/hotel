@@ -7,6 +7,7 @@ import MediaGallery from "../components/media-gallery/MediaGallery";
 import PartnersSlider from "../components/partners/PartnersSlider";
 import Careers from "../components/careers/Careers";
 import {GALLERY_ITEMS} from "../mock_data/gallery.data";
+import {IMAGE_WITH_TEXT} from "../mock_data/image_with_text.data";
 
 
 const About = () => {
@@ -17,7 +18,11 @@ const About = () => {
     return (
         <>
             <HeroBanner page_content={page_content && page_content} />
-            <ImageWithText/>
+            {
+                IMAGE_WITH_TEXT.map((item)=>{
+                    return <ImageWithText data={item} key={item.id}/>
+                })
+            }
             <MediaGallery dataArray={dataArray}/>
             <PartnersSlider/>
             <Careers/>

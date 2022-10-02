@@ -80,9 +80,20 @@
 }
 
 .ImageWithTextUrl {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  padding-right: 40px;
   font-size: 20px;
   font-weight: 600;
   text-decoration: underline;
   margin-top: 30px;
   color: $brand-green-light;
+
+  .RightArrowIcon{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: auto;
+  }
 }

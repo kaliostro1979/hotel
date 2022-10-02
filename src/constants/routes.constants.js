@@ -3,7 +3,7 @@ import Hostel from "../pages/Hostel";
 import About from "../pages/About";
 import Booking from "../pages/Booking";
 import Tours from "../pages/Tours";
-import Stories from "../pages/Stories";
+import Stories from "../pages/stories/Stories";
 import UpcomingProjects from "../pages/UpcomingProjects";
 import Page from "../pages/dynamic-page/Page";
 
