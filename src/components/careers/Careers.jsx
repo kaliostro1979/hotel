@@ -11,6 +11,7 @@ const Careers = () => {
                 <div className={"CareersContent"}>
                     <h2 className={"CareersContentTitle"}>{data.title}</h2>
                     <p className={"CareersContentText"}>{data.text}</p>
+                    <br/>
                     <StyledLink url={data.url} text={data.button} dark={true}/>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import HeroBanner from "../components/hero-banner/HeroBanner";
 import {usePageContent} from "../hooks/usePageContent";
 import { useDispatch, useSelector } from "react-redux";
 import { getToursAction } from "../redux/actions/getToursAction";
+import { STORIES_DATA } from "../mock_data/stories.data";
 
 const Stories = () => {
     const {t} = useTranslation()
@@ -17,7 +18,18 @@ const Stories = () => {
     }, [dispatch])*/
 
     return (
-        <HeroBanner page_content={page_content && page_content} />
+        <>
+            <HeroBanner page_content={page_content && page_content} />
+            <div>
+                <ul>
+                    {
+                        STORIES_DATA.categories.map((category)=>{
+                            return <li>{category}</li>
+                        })
+                    }
+                </ul>
+            </div>
+        </>
     );
 };
 

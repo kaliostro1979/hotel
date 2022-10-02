@@ -3,11 +3,10 @@ import {useContext} from "react";
 import {MainContext} from "../../../context/MainContext";
 
 const NavigationMenuHeader = () => {
-    const {setIsShow, setOpen} = useContext(MainContext)
+    const {setOpen} = useContext(MainContext)
 
     const handleNavHeaderLink = ()=>{
         setOpen(false)
-        setIsShow(true)
     }
 
     return (

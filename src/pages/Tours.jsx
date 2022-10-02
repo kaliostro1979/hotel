@@ -10,6 +10,7 @@ import AccordionContainer from "../components/UI/accordion/AccordionContainer";
 import ImageWithAccordion from "../components/image-with-accordion/ImageWithAccordion";
 import { ACCORDION_ITEMS } from "../mock_data/accordion.data";
 import Subscribe from "../components/subscribe/Subscribe";
+import Button from "../components/UI/button/Button";
 
 const Tours = () => {
     const page_content = usePageContent("tours")
