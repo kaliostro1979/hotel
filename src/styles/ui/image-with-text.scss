@@ -6,12 +6,25 @@
     margin-top: 55px;
   }
 
+  .ImageWithTextElementIcon {
+    position: absolute;
+    right: -6px;
+    height: 200px;
+    color: $color-white;
+    transform: scale(0.96);
+  }
+
   &:nth-child(odd){
     .ImageWithTextMeta {
       order: 1;
     }
     .ImageWithTextImage {
       order: 2;
+    }
+    .ImageWithTextElementIcon {
+      top: 50px;
+      right: -50px;
+      transform: rotate(90deg) scaleX(-1);
     }
   }
 
@@ -21,6 +34,9 @@
     }
     .ImageWithTextImage {
       order: 1;
+    }
+    .ImageWithTextElementIcon {
+      bottom: -4px;
     }
   }
 }

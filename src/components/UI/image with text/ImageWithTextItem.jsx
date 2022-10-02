@@ -11,6 +11,11 @@ const ImageWithTextItem = ({content}) => {
             </div>
             <div className={"ImageWithTextElement ImageWithTextImage"}>
                 <img src={content.image} alt={content.title}/>
+                <div className={"ImageWithTextElementIcon"}>
+                    <svg className="PageListItemIcon">
+                        <use xlinkHref={`#${content.icon}`} />
+                    </svg>
+                </div>
             </div>
         </div>
     );

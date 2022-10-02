@@ -13,16 +13,15 @@ const Subscribe = () => {
     const [ data, setData ] = useState("")
 
     const isValidEmail = email =>
-        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-            email
-        );
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            .test(email);
 
     const onSubmit = data => {
         if (data) {
             setIsShow(true)
             setData(data)
         }
-        reset(data)
+        reset()
     };
 
     const handleEmailValidation = email => {

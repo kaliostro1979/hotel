@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
 import Error from "./elements/Error";
 import RightArrowIcon from "../../icons/RightArrowIcon";
 
 const ContactForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = data => console.log("Data", data);
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
+  const onSubmit = data => {
+    reset()
+    console.log("Data", data)
+  };
 
   const isValidEmail = email =>
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-      email
-    );
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        .test(email);
 
   const handleEmailValidation = email => {
     const isValid = isValidEmail(email);
@@ -23,6 +25,10 @@ const ContactForm = () => {
 
     return isValid;
   };
+
+  useEffect(()=>{
+
+  }, [])
 
   return (
     <div className={"ContactFormContainer"}>
@@ -47,7 +53,7 @@ const ContactForm = () => {
         </div>
         <div className={"ContactFormGroup"}>
           <input
-              {...register("email", { required: true })}
+              {...register("message", { required: true })}
               className={"ContactFormField"}
               placeholder={"Message*"}
           />
