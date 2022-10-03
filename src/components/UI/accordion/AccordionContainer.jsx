@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import AccordionItem from "./AccordionItem";
+import Preloader from "../Preloader";
+import {useSelector} from "react-redux";
 
 const AccordionContainer = ({title, text, data}) => {
+    const isLoading = useSelector(state => state.main.tours.isLoading)
     const [clicked, setClicked] = useState("0");
 
     const handleToggle = (index) => {
@@ -18,7 +21,7 @@ const AccordionContainer = ({title, text, data}) => {
                 <p>{text}</p>
             </div>
           {
-              data.map((item, index)=>{
+              isLoading ? <Preloader/> : data && data.map((item, index)=>{
               return  <AccordionItem
                   text={item.content}
                   title={item.title}

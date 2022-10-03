@@ -1,13 +1,21 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef} from 'react';
 import Slider from "../UI/slider/Slider";
-import {PARTNERS} from "../../mock_data/partners.data";
 import PartnersSliderItem from "./PartnersSliderItem";
 import SlidePrevButton from "../UI/slider/SliderPrevButton";
 import SlideNextButton from "../UI/slider/SliderNextButton";
+import {useDispatch, useSelector} from "react-redux";
+import {getPartners} from "../../redux/slices/partners.slice";
 
 const PartnersSlider = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+    const dispatch  = useDispatch()
+
+    const partners = useSelector(state => state.main.partners.partners)
+
+    useEffect(()=>{
+        dispatch(getPartners())
+    }, [dispatch])
 
     return (
         <div className={"PartnersSliderContainer"}>
@@ -19,7 +27,7 @@ const PartnersSlider = () => {
                 </div>
             </div>
             <Slider
-                dataArray={PARTNERS}
+                dataArray={partners}
                 className={"PartnersSlider"}
                 Component={PartnersSliderItem}
                 sliderClassName={"PartnersSlide"}

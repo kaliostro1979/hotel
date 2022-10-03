@@ -8,7 +8,7 @@ import ActiveRoomImages from "./ActiveRoomImages";
 import RoomOptions from "./RoomOptions";
 import RoomDetails from "./RoomDetails";
 
-const RoomsGalleryContainer = ({rooms_names}) => {
+const RoomsGalleryContainer = ({rooms_names, rooms, activeRoomMeta}) => {
     const {setSwiper} = useContext(MainContext)
 
     const prevRef = useRef(null);
@@ -18,7 +18,7 @@ const RoomsGalleryContainer = ({rooms_names}) => {
         <div className={"Container"}>
             <div className={"RoomsGallerySlider"}>
                 <Slider
-                    dataArray={rooms_names}
+                    dataArray={rooms}
                     Component={RoomsNames}
                     className={"RoomsGalleryContainerSlider"}
                     loop={false}
@@ -36,13 +36,13 @@ const RoomsGalleryContainer = ({rooms_names}) => {
                 </div>
             </div>
             <div className={"ActiveRoomImagesContainer"}>
-                <ActiveRoomImages rooms_names={rooms_names && rooms_names}/>
+                <ActiveRoomImages rooms_names={rooms_names && rooms_names} activeRoomMeta={activeRoomMeta}/>
             </div>
             <div>
-                <RoomOptions rooms_names={rooms_names && rooms_names}/>
+                <RoomOptions rooms_names={rooms_names && rooms_names} activeRoomMeta={activeRoomMeta}/>
             </div>
             <div className={"RoomDetailsWrapper"}>
-                <RoomDetails rooms_names={rooms_names && rooms_names}/>
+                <RoomDetails rooms_names={rooms_names && rooms_names} activeRoomMeta={activeRoomMeta}/>
             </div>
         </div>
     );

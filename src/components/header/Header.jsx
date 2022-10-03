@@ -7,7 +7,7 @@ import {MainContext} from "../../context/MainContext";
 import CloseIcon from "../../icons/CloseIcon";
 
 const Header = ({light, navigationLink, buttonText, url, callBack}) => {
-    const {setOpen, open, activeLanguage} = useContext(MainContext)
+    const {setOpen, activeLanguage} = useContext(MainContext)
 
     return (
     <header className={light ? "Header" : "Header Dark"}>

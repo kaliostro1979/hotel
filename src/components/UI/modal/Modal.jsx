@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import ReactDom from "react-dom";
 import {MainContext} from "../../../context/MainContext";
 import CloseIcon from "../../../icons/CloseIcon";

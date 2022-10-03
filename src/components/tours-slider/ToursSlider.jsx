@@ -1,7 +1,6 @@
 import React, {useRef} from 'react';
 import Slider from "../UI/slider/Slider";
 import TourSliderItem from "./TourSliderItem";
-import {TOURS_ITEMS} from "../../mock_data/tours.data";
 import SlidePrevButton from "../UI/slider/SliderPrevButton";
 import SlideNextButton from "../UI/slider/SliderNextButton";
 

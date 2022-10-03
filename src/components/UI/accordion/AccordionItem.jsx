@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PlusIcon from "../../../icons/PlusIcon";
 import MinusIcon from "../../../icons/MinusIcon";
 

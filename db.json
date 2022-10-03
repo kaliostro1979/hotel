@@ -1,31 +1,46 @@
 {
-  "pages": {
-    "hostel": {
-      "title": "Hostel",
-      "content": "The hostel and hotel are located in the historical part of Yerevan. This area of the city was very popular by its market, which was called ghantar. The word \"ghantar\" itself means big scales of the market. Here were the biggest and the smallest scales of Yerevan: \"ghantar\" and \"mirza\" accordingly, which were the property of the City Hall. The wholesale trade of the city was carried on by these scales and the only one who had the right to weigh was the owner of the scales.",
-      "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+  "banner": [
+    {
+      "id": "hostel",
+      "content": {
+        "title": "Hostel",
+        "content": "The hostel and hotel are located in the historical part of Yerevan. This area of the city was very popular by its market, which was called ghantar. The word \"ghantar\" itself means big scales of the market. Here were the biggest and the smallest scales of Yerevan: \"ghantar\" and \"mirza\" accordingly, which were the property of the City Hall. The wholesale trade of the city was carried on by these scales and the only one who had the right to weigh was the owner of the scales.",
+        "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+      }
     },
-    "booking": {
-      "title": "Booking",
-      "content": "",
-      "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+    {
+      "id": "booking",
+      "content": {
+        "title": "Booking",
+        "content": "",
+        "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+      }
     },
-    "about": {
-      "title": "About",
-      "content": "The hostel and hotel are located in the historical part of Yerevan. This area of the city was very popular by its market, which was called \"ghantar\". The word \"ghantar\" itself means big scales of the market. Here were the biggest and the smallest scales of Yerevan: \"ghantar\" and \"mirza\" accordingly, which were the property of the City Hall. The wholesale trade of the city was carried on by these scales and the only one who had the right to weigh was the owner of the scales...",
-      "image": "https://images.unsplash.com/photo-1563906267088-b029e7101114?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+    {
+      "id": "about",
+      "content": {
+        "title": "About",
+        "content": "The hostel and hotel are located in the historical part of Yerevan. This area of the city was very popular by its market, which was called \"ghantar\". The word \"ghantar\" itself means big scales of the market. Here were the biggest and the smallest scales of Yerevan: \"ghantar\" and \"mirza\" accordingly, which were the property of the City Hall. The wholesale trade of the city was carried on by these scales and the only one who had the right to weigh was the owner of the scales...",
+        "image": "https://images.unsplash.com/photo-1563906267088-b029e7101114?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+      }
     },
-    "stories": {
-      "title": "Stories",
-      "content": "The hostel and hotel are located in the historical part of Yerevan. This area of the city was very popular by its market, which was called \"ghantar\". The word \"ghantar\" itself means big scales of the market. Here were the biggest and the smallest scales of Yerevan: \"ghantar\" and \"mirza\" accordingly, which were the property of the City Hall. The wholesale trade of the city was carried on by these scales and the only one who had the right to weigh was the owner of the scales...",
-      "image": "https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80"
+    {
+      "id": "stories",
+      "content": {
+        "title": "Stories",
+        "content": "The hostel and hotel are located in the historical part of Yerevan. This area of the city was very popular by its market, which was called \"ghantar\". The word \"ghantar\" itself means big scales of the market. Here were the biggest and the smallest scales of Yerevan: \"ghantar\" and \"mirza\" accordingly, which were the property of the City Hall. The wholesale trade of the city was carried on by these scales and the only one who had the right to weigh was the owner of the scales...",
+        "image": "https://images.unsplash.com/photo-1580977276076-ae4b8c219b8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80"
+      }
     },
-    "tours": {
-      "title": "Tours",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor",
-      "image": "https://images.unsplash.com/photo-1606402179428-a57976d71fa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+    {
+      "id": "tours",
+      "content": {
+        "title": "Tours",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor",
+        "image": "https://images.unsplash.com/photo-1606402179428-a57976d71fa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+      }
     }
-  },
+  ],
   "tours-data": {
     "hot_tours": [
       {
@@ -431,6 +446,913 @@
         }
     ]
     }
-
+  ],
+  "about": [
+    {
+      "id": "imt-1",
+      "title": "Why Kantar",
+      "text": "Armenia is a unique mix of both Eastern and Western cultures. Yerevan, the capital of Armenia, which is in fact older than Rome, was founded in 782 A.D and was called Erebuni. Here you can almost feel the breath of old Armenian culture that is evident in the beautiful buildings made of \"touf\" stone, which are rare all over the world, museums representing our history and churches that are bright....",
+      "url": "/aaa",
+      "icon": "stories",
+      "image": "https://images.unsplash.com/photo-1561049933-c8fbef47b329?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80"
+    },
+    {
+      "id": "imt-2",
+      "title": "Why Armenia",
+      "text": "Armenia is a unique mix of both Eastern and Western cultures. Yerevan, the capital of Armenia, which is in fact older than Rome, was founded in 782 A.D and was called Erebuni. Here you can almost feel the breath of old Armenian culture that is evident in the beautiful buildings made of \"touf\" stone, which are rare all over the world, museums representing our history and churches that are bright examples of Armenian's Christian belief.\n",
+      "url": "/bbb",
+      "icon": "stories",
+      "image": "https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+    },
+    {
+      "id": "imt-3",
+      "title": "Why Armenia",
+      "text": "Armenia is a unique mix of both Eastern and Western cultures. Yerevan, the capital of Armenia, which is in fact older than Rome, was founded in 782 A.D and was called Erebuni. Here you can almost feel the breath of old Armenian culture that is evident in the beautiful buildings made of \"touf\" stone, which are rare all over the world, museums representing our history and churches that are bright examples of Armenian's Christian belief.\n",
+      "url": "/bbb",
+      "icon": "stories",
+      "image": "https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+    },
+    {
+      "id": "imt-4",
+      "title": "Why Armenia",
+      "text": "Armenia is a unique mix of both Eastern and Western cultures. Yerevan, the capital of Armenia, which is in fact older than Rome, was founded in 782 A.D and was called Erebuni. Here you can almost feel the breath of old Armenian culture that is evident in the beautiful buildings made of \"touf\" stone, which are rare all over the world, museums representing our history and churches that are bright examples of Armenian's Christian belief.\n",
+      "url": "/bbb",
+      "icon": "stories",
+      "image": "https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+    },
+    {
+      "id": "imt-5",
+      "title": "Why Armenia",
+      "text": "Armenia is a unique mix of both Eastern and Western cultures. Yerevan, the capital of Armenia, which is in fact older than Rome, was founded in 782 A.D and was called Erebuni. Here you can almost feel the breath of old Armenian culture that is evident in the beautiful buildings made of \"touf\" stone, which are rare all over the world, museums representing our history and churches that are bright examples of Armenian's Christian belief.\n",
+      "url": "/bbb",
+      "icon": null,
+      "image": "https://images.unsplash.com/photo-1600758208050-a22f17dc5bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+    }
+  ],
+  "hostel": {
+    "id": "ac-host-1",
+    "title": "FAQ",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam",
+    "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+    "data": [
+      {
+        "id": "ah-1",
+        "title": "What is Lorem Ipsum?",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": "ah-2",
+        "title": "Why do we use it?",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": "ah-3",
+        "title": "Where does it come from?",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": "ah-4",
+        "title": "Where can I get some?",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }
+    ]
+  },
+  "tours_accordion": {
+    "id": "ac-tours-1",
+    "title": "FAQ",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam",
+    "image": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80",
+    "data": [
+      {
+        "id": "atour-1",
+        "title": "check in / check out",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": "atour-2",
+        "title": "cleaning",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": "atour-3",
+        "title": "Parking",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": "atour-4",
+        "title": "food/Cooking",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id": "atour-5",
+        "title": "cleaning",
+        "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }
+    ]
+  },
+  "tours-variants": [
+    {
+      "id": "tv-1",
+      "slug": "hot-tours",
+      "title": "Hot tours",
+      "items": [
+        {
+          "id": "t-1",
+          "name": "Image 1",
+          "src": "https://images.unsplash.com/photo-1571067295991-a359d382020d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "18.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Yerevan",
+            "distance": "50km",
+            "duration": "4-5h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "t-2",
+          "name": "Image 2",
+          "src": "https://images.unsplash.com/photo-1617247815656-f6e176b54f99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "25.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "t-3",
+          "name": "Image 3",
+          "src": "https://images.unsplash.com/photo-1584870960521-bfbf464c1940?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1748&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "12.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "t-4",
+          "name": "Image 4",
+          "src": "https://images.unsplash.com/photo-1566865204669-c7b93be298bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "34.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "t-5",
+          "name": "Image 5",
+          "src": "https://images.unsplash.com/photo-1609949165382-2e442783c8d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "21.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "t-6",
+          "name": "Image 6",
+          "src": "https://images.unsplash.com/photo-1609973010723-fc9c81a06fa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "13.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "t-7",
+          "name": "Image 7",
+          "src": "https://images.unsplash.com/photo-1607525692161-ea04641b081d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "35.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv-2",
+      "slug": "sale",
+      "title": "Sale",
+      "items": [
+        {
+          "id": "s-1",
+          "name": "Image 1",
+          "src": "https://images.unsplash.com/photo-1571067295991-a359d382020d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "type": "image",
+          "sale_price": "14000",
+          "price": "18.000",
+          "sale": true,
+          "details": {
+            "type": "City Tour",
+            "location": "Yerevan",
+            "distance": "50km",
+            "duration": "4-5h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "s-2",
+          "name": "Image 2",
+          "src": "https://images.unsplash.com/photo-1617247815656-f6e176b54f99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "type": "image",
+          "sale_price": "17000",
+          "price": "25.000",
+          "sale": true,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "s-3",
+          "name": "Image 3",
+          "src": "https://images.unsplash.com/photo-1584870960521-bfbf464c1940?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1748&q=80",
+          "type": "image",
+          "sale_price": "9000",
+          "price": "12.000",
+          "sale": true,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "s-4",
+          "name": "Image 4",
+          "src": "https://images.unsplash.com/photo-1566865204669-c7b93be298bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+          "type": "image",
+          "sale_price": "21000",
+          "price": "34.000",
+          "sale": true,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "s-5",
+          "name": "Image 5",
+          "src": "https://images.unsplash.com/photo-1609949165382-2e442783c8d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=770&q=80",
+          "type": "image",
+          "sale_price": "18000",
+          "price": "21.000",
+          "sale": true,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "s-6",
+          "name": "Image 6",
+          "src": "https://images.unsplash.com/photo-1609973010723-fc9c81a06fa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2064&q=80",
+          "type": "image",
+          "sale_price": "10000",
+          "price": "13.000",
+          "sale": true,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "s-7",
+          "name": "Image 7",
+          "src": "https://images.unsplash.com/photo-1607525692161-ea04641b081d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+          "type": "image",
+          "sale_price": "23000",
+          "price": "35.000",
+          "sale": true,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tv-3",
+      "slug": "tours",
+      "title": "All Tours",
+      "items": [
+        {
+          "id": "at-1",
+          "name": "Image 1",
+          "src": "https://images.unsplash.com/photo-1609861517208-e5b7b4cd4b87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "18.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Yerevan",
+            "distance": "50km",
+            "duration": "4-5h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "at-2",
+          "name": "Image 2",
+          "src": "https://images.unsplash.com/photo-1598751337485-0d57b0c50b83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=682&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "25.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "at-3",
+          "name": "Image 3",
+          "src": "https://images.unsplash.com/photo-1609137144813-7d9921338f24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "12.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "at-4",
+          "name": "Image 4",
+          "src": "https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1106&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "34.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "at-5",
+          "name": "Image 5",
+          "src": "https://images.unsplash.com/photo-1563693267403-111c5d856e49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "21.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "at-6",
+          "name": "Image 6",
+          "src": "https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "13.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        },
+        {
+          "id": "at-7",
+          "name": "Image 7",
+          "src": "https://images.unsplash.com/photo-1605516094070-9cf1705ca558?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "type": "image",
+          "sale_price": null,
+          "price": "35.000",
+          "sale": false,
+          "details": {
+            "type": "City Tour",
+            "location": "Dilijan",
+            "distance": "120km",
+            "duration": "1-2h",
+            "people": "15-18"
+          }
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "id": "hostel",
+      "data": [
+        {
+          "id": "hg-1",
+          "name": "Image 1",
+          "src": "https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+          "type": "image"
+        },
+        {
+          "id": "hg-2",
+          "name": "Image 2",
+          "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+          "type": "image"
+        },
+        {
+          "id": "hg-3",
+          "name": "Image 3",
+          "src": "https://images.unsplash.com/photo-1562778612-e1e0cda9915c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          "type": "image"
+        },
+        {
+          "id": "hg-4",
+          "name": "Image 4",
+          "src": "https://images.unsplash.com/photo-1529551739587-e242c564f727?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+          "type": "image"
+        },
+        {
+          "id": "hg-5",
+          "name": "Image 5",
+          "src": "https://images.unsplash.com/photo-1567197427669-a0d3603a3586?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          "type": "image"
+        },
+        {
+          "id": "hg-6",
+          "name": "Image 6",
+          "src": "https://images.unsplash.com/photo-1578774204375-826dc5d996ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "type": "image"
+        },
+        {
+          "id": "hg-7",
+          "name": "Video 7",
+          "src": "https://ak.picdn.net/shutterstock/videos/1061449648/preview/stock-footage-relax-on-an-empty-sea-beach-travel-to-the-paradise-sea-beach-the-dominican-republic-beaches.webm",
+          "type": "video"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "data": [
+        {
+          "id": "ag-1",
+          "name": "Image 1",
+          "src": "https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+          "type": "image"
+        },
+        {
+          "id": "ag-2",
+          "name": "Image 2",
+          "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+          "type": "image"
+        },
+        {
+          "id": "ag-3",
+          "name": "Image 3",
+          "src": "https://images.unsplash.com/photo-1562778612-e1e0cda9915c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          "type": "image"
+        },
+        {
+          "id": "ag-4",
+          "name": "Image 4",
+          "src": "https://images.unsplash.com/photo-1529551739587-e242c564f727?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80",
+          "type": "image"
+        },
+        {
+          "id": "ag-5",
+          "name": "Image 5",
+          "src": "https://images.unsplash.com/photo-1567197427669-a0d3603a3586?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+          "type": "image"
+        },
+        {
+          "id": "ag-6",
+          "name": "Image 6",
+          "src": "https://images.unsplash.com/photo-1578774204375-826dc5d996ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "type": "image"
+        },
+        {
+          "id": "ag-7",
+          "name": "Video 7",
+          "src": "https://ak.picdn.net/shutterstock/videos/1061449648/preview/stock-footage-relax-on-an-empty-sea-beach-travel-to-the-paradise-sea-beach-the-dominican-republic-beaches.webm",
+          "type": "video"
+        }
+      ]
+    }
+  ],
+  "info_data": [
+    {
+      "id": "hi-1",
+      "name": "hotel",
+      "icon": "hotel",
+      "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "content": "The hostel and hotel are located in the historical part of Yerevan. This area of the city was very popular by its market, which was called \"ghantar\". The word \"ghantar\" itself means big scales of the market. Here were the biggest and the smallest scales of Yerevan: \"ghantar\" and \"mirza\" accordingly"
+    },
+    {
+      "id": "hi-2",
+      "name": "hostel",
+      "icon": "hostel",
+      "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
+      "content": "The hostel and hotel are located in the historical part of Yerevan. This area of the city was very popular by its market, which was called \"ghantar\". The word \"ghantar\" itself means big scales of the market. Here were the biggest and the smallest scales of Yerevan: \"ghantar\" and \"mirza\" accordingly"
+    }
+  ],
+  "partners": [
+    {
+      "id": "p-1",
+      "title": "Tripadvisor",
+      "type": "image",
+      "src": "https://cdn.logojoy.com/wp-content/uploads/20200605160841/tripadvisor-logo-.png"
+    },
+    {
+      "id": "p-2",
+      "title": "Calypso",
+      "type": "image",
+      "src": "https://e7.pngegg.com/pngimages/685/964/png-clipart-tour-operator-logo-tours-graphic-design-egipto-paquetes-de-vacaciones-tour-operator-logo.png"
+    },
+    {
+      "id": "p-3",
+      "title": "Sunset",
+      "type": "image",
+      "src": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/travel-agency-travel-tour-guide-logo-template-design-a71960901268cab692bf043764fecbe4_screen.jpg?ts=1597392770"
+    },
+    {
+      "id": "p-4",
+      "title": "Mira",
+      "type": "image",
+      "src": "https://i.pinimg.com/736x/da/4c/ec/da4cec4c115083769c25909eaed5ebfe.jpg"
+    },
+    {
+      "id": "p-5",
+      "title": "EcuaViaggi",
+      "type": "image",
+      "src": "https://w7.pngwing.com/pngs/146/957/png-transparent-travel-agent-tour-operator-logo-andes-travel-text-logo-industrial-design.png"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room-1",
+      "room_name": "Standard Double Room",
+      "meta": {
+        "images": [
+          {
+            "id": "room-1-img-1",
+            "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          },
+          {
+            "id": "room-1-img-2",
+            "src": "https://images.unsplash.com/photo-1561501878-aabd62634533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-1-img-3",
+            "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          },
+          {
+            "id": "room-1-img-4",
+            "src": "https://images.unsplash.com/photo-1631049035634-c04c637651b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          }
+        ],
+        "options": [
+          {
+            "id": "room-1-op-1",
+            "name": "Mountain view",
+            "icon": "mountain_view"
+          },
+          {
+            "id": "room-1-op-2",
+            "name": "Air conditioning",
+            "icon": "air_conditioning"
+          },
+          {
+            "id": "room-1-op-3",
+            "name": "Private Bathroom",
+            "icon": "private_bathroom"
+          },
+          {
+            "id": "room-1-op-4",
+            "name": "Flat-screen TV",
+            "icon": "flat_screen_tv"
+          },
+          {
+            "id": "room-1-op-5",
+            "name": "Soundproof",
+            "icon": "soundproof"
+          },
+          {
+            "id": "room-1-op-6",
+            "name": "Free WiFi",
+            "icon": "free_wifi"
+          },
+          {
+            "id": "room-1-op-7",
+            "name": "Free parking",
+            "icon": "free_parking"
+          }
+        ],
+        "description": {
+          "id": "room-1-desc-1",
+          "text": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium laoreet lorem consectetur dis bibendum. Quis aliquam eu dis pulvinar nibh. Scelerisque netus integer sit tempor, mauris ullamcorper convallis. A, ornare viverra pellentesque eu leo, eget. Blandit tincidunt pellentesque integer elementum. Sed vitae nisl turpis id eu nec convallis ullamcorper velit. Id eget diam fames proin. Ipsum libero donec magna at quam. In adipiscing tellus malesuada cursus nam.",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "id": "room-2",
+      "room_name": "Standard Twin Room",
+      "meta": {
+        "images": [
+          {
+            "id": "room-2-img-1",
+            "src": "https://images.unsplash.com/photo-1587874522487-fe10e954d035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-2-img-2",
+            "src": "https://images.unsplash.com/photo-1631049035326-57414e7739eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-2-img-3",
+            "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-2-img-4",
+            "src": "https://images.unsplash.com/photo-1578898886615-0c4719f932dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          }
+        ]
+      }
+    },
+    {
+      "id": "room-3",
+      "room_name": "Studio",
+      "meta": {
+        "images": [
+          {
+            "id": "room-3-img-1",
+            "src": "https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+          },
+          {
+            "id": "room-3-img-2",
+            "src": "https://images.unsplash.com/photo-1464288550599-43d5a73451b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1196&q=80"
+          },
+          {
+            "id": "room32-img-3",
+            "src": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          },
+          {
+            "id": "room-3-img-4",
+            "src": "https://images.unsplash.com/photo-1592229505801-77b31918d822?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+          },
+          {
+            "id": "room-3-img-5",
+            "src": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          }
+        ]
+      }
+    },
+    {
+      "id": "room-4",
+      "room_name": "Standard Double Room",
+      "meta": {
+        "images": [
+          {
+            "id": "room-4-img-1",
+            "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          },
+          {
+            "id": "room-4-img-2",
+            "src": "https://images.unsplash.com/photo-1561501878-aabd62634533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-4-img-3",
+            "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          },
+          {
+            "id": "room-4-img-4",
+            "src": "https://images.unsplash.com/photo-1631049035634-c04c637651b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          }
+        ]
+      }
+    },
+    {
+      "id": "room-5",
+      "room_name": "Standard Twin Room",
+      "meta": {
+        "images": [
+          {
+            "id": "room-5-img-1",
+            "src": "https://images.unsplash.com/photo-1587874522487-fe10e954d035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-5-img-2",
+            "src": "https://images.unsplash.com/photo-1631049035326-57414e7739eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-5-img-3",
+            "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-5-img-4",
+            "src": "https://images.unsplash.com/photo-1578898886615-0c4719f932dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          }
+        ]
+      }
+    },
+    {
+      "id": "room-6",
+      "room_name": "Studio",
+      "meta": {
+        "images": [
+          {
+            "id": "room-6-img-1",
+            "src": "https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+          },
+          {
+            "id": "room-6-img-2",
+            "src": "https://images.unsplash.com/photo-1464288550599-43d5a73451b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1196&q=80"
+          },
+          {
+            "id": "room-6-img-3",
+            "src": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          },
+          {
+            "id": "room-6-img-4",
+            "src": "https://images.unsplash.com/photo-1592229505801-77b31918d822?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+          },
+          {
+            "id": "room-6-img-5",
+            "src": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          }
+        ]
+      }
+    },
+    {
+      "id": "room-7",
+      "room_name": "Standard Double Room",
+      "meta": {
+        "images": [
+          {
+            "id": "room-7-img-1",
+            "src": "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          },
+          {
+            "id": "room-7-img-2",
+            "src": "https://images.unsplash.com/photo-1561501878-aabd62634533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-1-img-3",
+            "src": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          },
+          {
+            "id": "room-7-img-4",
+            "src": "https://images.unsplash.com/photo-1631049035634-c04c637651b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          }
+        ]
+      }
+    },
+    {
+      "id": "room-8",
+      "room_name": "Standard Twin Room",
+      "meta": {
+        "images": [
+          {
+            "id": "room-8-img-1",
+            "src": "https://images.unsplash.com/photo-1587874522487-fe10e954d035?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-8-img-2",
+            "src": "https://images.unsplash.com/photo-1631049035326-57414e7739eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-8-img-3",
+            "src": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          },
+          {
+            "id": "room-8-img-4",
+            "src": "https://images.unsplash.com/photo-1578898886615-0c4719f932dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          }
+        ]
+      }
+    },
+    {
+      "id": "room-9",
+      "room_name": "Studio",
+      "meta": {
+        "images": [
+          {
+            "id": "room-9-img-1",
+            "src": "https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+          },
+          {
+            "id": "room-9-img-2",
+            "src": "https://images.unsplash.com/photo-1464288550599-43d5a73451b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1196&q=80"
+          },
+          {
+            "id": "room-9-img-3",
+            "src": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+          },
+          {
+            "id": "room-9-img-4",
+            "src": "https://images.unsplash.com/photo-1592229505801-77b31918d822?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+          },
+          {
+            "id": "room-9-img-5",
+            "src": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+          }
+        ]
+      }
+    }
+  ],
+  "home": [
+    {
+      "id": "l1",
+      "name": "hotel",
+      "icon": "hotel",
+      "image": "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1642&q=80",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": "l2",
+      "name": "hostel",
+      "icon": "hostel",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": "l3",
+      "name": "tours",
+      "icon": "tours_small",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    },
+    {
+      "id": "l4",
+      "name": "stories",
+      "icon": "stories",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    }
   ]
 }

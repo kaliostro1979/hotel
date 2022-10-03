@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from "../UI/Image";
 import AccordionContainer from "../UI/accordion/AccordionContainer";
-import { ACCORDION_ITEMS } from "../../mock_data/accordion.data";
 
 const ImageWithAccordion = ({data}) => {
 

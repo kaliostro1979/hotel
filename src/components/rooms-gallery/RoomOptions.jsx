@@ -1,21 +1,11 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from "react-redux";
-import { getActiveRoomOptions, getRoomsName } from "../../redux/slices/rooms.slice";
+import React from 'react';
 
-const RoomOptions = ({rooms_names}) => {
-    const rooms_options = useSelector(state => state.main.rooms_gallery.active_room_options)
-    const dispatch = useDispatch()
-
-    useEffect(() => {
-        if (rooms_names.length) {
-            dispatch(getActiveRoomOptions(rooms_names[0].id))
-        }
-    }, [ rooms_names, dispatch ])
+const RoomOptions = ({activeRoomMeta}) => {
 
     return (
         <div className={"RoomOptions"}>
             {
-                rooms_options.options && rooms_options.options.map(option=>{
+                activeRoomMeta.meta && activeRoomMeta.meta.options && activeRoomMeta.meta.options.map(option=>{
                     return (
                         <div className={"RoomOptionsItem"} key={option.id}>
                             <div className={"RoomOptionsItemIcon"}>

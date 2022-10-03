@@ -3,32 +3,55 @@ import ImageWithAccordion from "../components/image-with-accordion/ImageWithAcco
 import MediaGallery from "../components/media-gallery/MediaGallery";
 import RoomsGalleryContainer from "../components/rooms-gallery/RoomsGalleryContainer";
 import HeroBanner from "../components/hero-banner/HeroBanner";
-import {getRoomsName} from "../redux/slices/rooms.slice";
 import {useDispatch, useSelector} from "react-redux";
 import {usePageContent} from "../hooks/usePageContent";
-import {GALLERY_ITEMS} from "../mock_data/gallery.data";
-import { ACCORDION_ITEMS } from "../mock_data/accordion.data";
 import SlideList from "../components/page-list/SlideList";
-import { INFO_DATA_LIST } from "../mock_data/hotel.info.data";
+import {getHostelAccordionData} from "../redux/slices/hostel.slice";
+import {useLocation} from "react-router-dom";
+import {getGalleryDataByPage} from "../redux/slices/gallery.slice";
+import {getInfoData} from "../redux/slices/info.slice";
+import {getActiveRoomMeta, getRooms} from "../redux/slices/rooms-slider.slice";
 
 const Hostel = () => {
-
-    const rooms_names = useSelector(state => state.main.rooms_gallery.rooms_name)
+    const location = useLocation()
+    const currentLocation = location.pathname.split("/")[2]
     const dispatch = useDispatch()
-    const page_content = usePageContent("hostel")
-    const dataArray = GALLERY_ITEMS
+    const page_content = usePageContent(currentLocation)
 
-    useEffect(() => {
-        dispatch(getRoomsName())
-    }, [ rooms_names, dispatch ])
+    const accordionData = useSelector(state => state.main.tours.tours)
+    const dataArray = useSelector(state => state.main.gallery.galleryData)
+    const infoData = useSelector(state => state.main.info.data)
+    const rooms = useSelector(state => state.main.rooms.rooms)
+    const activeRoomMeta = useSelector(state => state.main.rooms.activeRoomMeta)
+
+    useEffect(()=>{
+        dispatch(getHostelAccordionData())
+        dispatch(getInfoData())
+        dispatch(getRooms())
+    }, [dispatch])
+
+    useEffect(()=>{
+        if (rooms.length){
+            dispatch(getActiveRoomMeta(rooms[0].id))
+        }
+    }, [dispatch, rooms])
+
+    useEffect(()=>{
+        if (currentLocation){
+            dispatch(getGalleryDataByPage(currentLocation))
+        }
+    }, [dispatch, currentLocation])
 
     return (
         <>
             <HeroBanner page_content={page_content && page_content} />
-            <RoomsGalleryContainer rooms_names={rooms_names}/>
+            <RoomsGalleryContainer
+                rooms={rooms}
+                activeRoomMeta={activeRoomMeta}
+            />
             <MediaGallery dataArray={dataArray}/>
-            <SlideList sectionClass={"List SectionList"} data={INFO_DATA_LIST}/>
-            <ImageWithAccordion data={ACCORDION_ITEMS.tours}/>
+            <SlideList sectionClass={"List SectionList"} data={infoData}/>
+            <ImageWithAccordion data={accordionData}/>
         </>
     );
 };
