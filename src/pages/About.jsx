@@ -16,7 +16,7 @@ import {getGalleryDataByPage} from "../redux/slices/gallery.slice";
 const About = () => {
     const location = useLocation()
     const currentLocation = location.pathname.split("/")[2]
-    const page_content = usePageContent(currentLocation)
+    const page_content = usePageContent()
 
 
     const dataArray = useSelector(state => state.main.gallery.galleryData)

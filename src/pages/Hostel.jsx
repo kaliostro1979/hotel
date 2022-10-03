@@ -16,7 +16,7 @@ const Hostel = () => {
     const location = useLocation()
     const currentLocation = location.pathname.split("/")[2]
     const dispatch = useDispatch()
-    const page_content = usePageContent(currentLocation)
+    const page_content = usePageContent()
 
     const accordionData = useSelector(state => state.main.tours.tours)
     const dataArray = useSelector(state => state.main.gallery.galleryData)

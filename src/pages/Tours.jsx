@@ -9,14 +9,10 @@ import Subscribe from "../components/subscribe/Subscribe";
 import {useDispatch, useSelector} from "react-redux";
 import {getToursAccordionData, getToursVariants} from "../redux/slices/tours.slice";
 import Preloader from "../components/UI/Preloader";
-import {useLocation} from "react-router-dom";
 import {getInfoData} from "../redux/slices/info.slice";
 
 const Tours = () => {
-    const location = useLocation()
-    const currentLocation = location.pathname.split("/")[2]
-
-    const page_content = usePageContent(currentLocation)
+    const page_content = usePageContent()
     const dispatch = useDispatch()
 
     const accordionData = useSelector(state => state.main.tours.tours)

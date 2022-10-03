@@ -1,12 +1,9 @@
 import React from 'react';
 import HeroBanner from "../components/hero-banner/HeroBanner";
 import {usePageContent} from "../hooks/usePageContent";
-import {useLocation} from "react-router-dom";
 
 const Booking = () => {
-    const location = useLocation()
-    const currentLocation = location.pathname.split("/")[2]
-    const page_content = usePageContent(currentLocation)
+    const page_content = usePageContent()
 
     return (
         <HeroBanner page_content={page_content && page_content} />
