@@ -17,7 +17,7 @@ const ActiveRoomImages = ({activeRoomMeta}) => {
                             onClick={()=>handleActiveImage(index)}
                             key={image.id}
                         >
-                            <img src={image.src} alt=""/>
+                            <img src={image.src} alt="" loading={"lazy"}/>
                         </div>
                     )
                 })

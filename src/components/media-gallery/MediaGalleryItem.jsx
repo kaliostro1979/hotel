@@ -24,7 +24,7 @@ const MediaGalleryItem = ({data}) => {
         <div className={"MediaGalleryItem"} onClick={handlePlayVideo}>
             {
                 data.type === "image" ?
-                    <img src={data.src} alt={data.name} className={"MediaItemInner"}/> :
+                    <img src={data.src} alt={data.name} className={"MediaItemInner"} loading={"lazy"}/> :
                     <div className={"MediaItemVideoWrapper"}>
                         <video className={"MediaItemInner"} ref={videoRef} muted={true}>
                             <source src={data.src} type="video/mp4" />

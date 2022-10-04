@@ -14,7 +14,7 @@ const TourSliderItem = ({data}) => {
                 data.sale ? <Label text={"sale"}/> : null
             }
             <div className={"HotToursSliderItemImage"}>
-                <img src={data.src} alt={data.name}/>
+                <img src={data.src} alt={data.name} loading={"lazy"}/>
                 <div className={"TourPrice"}>
                     {
                         data.sale_price ? <p><span className={"TourPriceOld"}>{data.price} amd</span> {data.sale_price} amd</p> : <p>{data.price} amd</p>

@@ -9,6 +9,7 @@ import infoSlice from "./slices/info.slice";
 import partnersSlice from "./slices/partners.slice";
 import roomsSliderSlice from "./slices/rooms-slider.slice";
 import homeSlice from "./slices/home.slice";
+import imageWithHoverSlice from "./slices/image-with-hover.slice";
 
 
 const rootReducer = combineReducers({
@@ -21,7 +22,8 @@ const rootReducer = combineReducers({
     gallery: gallerySlice,
     info: infoSlice,
     partners: partnersSlice,
-    rooms: roomsSliderSlice
+    rooms: roomsSliderSlice,
+    hoveredImage: imageWithHoverSlice
 })
 
 export const store = configureStore({

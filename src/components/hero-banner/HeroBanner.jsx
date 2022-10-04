@@ -9,7 +9,7 @@ const HeroBanner = ({page_content}) => {
     return (
         <div className={"HeroBanner"}>
             <div className={"HeroBannerImage"}>
-                <img src={page_content.image} alt=""/>
+                <img src={page_content.image} alt="" loading={"lazy"}/>
             </div>
             <div className={page_content.content ? "HeroBannerMeta" : "HeroBannerMeta WithoutText"}>
                 <div className={"HeroBannerTitle"}>

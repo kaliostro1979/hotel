@@ -1,0 +1,60 @@
+.ImagesWithHover {
+    padding: 50px 0;
+
+    &:nth-child(even) {
+        background-color: $color-white;
+
+        .ImagesWithHoverTitle, .ImagesWithHoverText {
+            color: $brand-primary;
+        }
+    }
+
+    &:nth-child(odd) {
+        background-color: $brand-primary;
+
+        .ImagesWithHoverTitle, .ImagesWithHoverText {
+            color: $color-white;
+        }
+    }
+}
+
+.ImagesWithHoverTitle {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ImagesWithHoverTitleImagesContainer {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.ImagesWithHoverTitleImage {
+    position: relative;
+    min-width: 310px;
+    padding-top: 472px;
+    transition: all .5s ease;
+
+    &.Active {
+        flex-grow: 1;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+.ImagesWithHoverText {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}

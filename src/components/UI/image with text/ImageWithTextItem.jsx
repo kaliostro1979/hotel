@@ -14,7 +14,7 @@ const ImageWithTextItem = ({content}) => {
                 </Link>
             </div>
             <div className={"ImageWithTextElement ImageWithTextImage"}>
-                <img src={content.image} alt={content.title}/>
+                <img src={content.image} alt={content.title} loading={"lazy"}/>
                 <div className={"ImageWithTextElementIcon"}>
                     <svg className="PageListItemIcon">
                         <use xlinkHref={`#${content.icon}`} />
