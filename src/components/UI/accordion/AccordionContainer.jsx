@@ -4,7 +4,7 @@ import Preloader from "../Preloader";
 import {useSelector} from "react-redux";
 
 const AccordionContainer = ({title, text, data}) => {
-    const isLoading = useSelector(state => state.main.tours.isLoading)
+    const { isLoading } = useSelector(state => state.main.tours)
     const [clicked, setClicked] = useState("0");
 
     const handleToggle = (index) => {

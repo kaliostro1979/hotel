@@ -15,11 +15,8 @@ const Stories = () => {
     const currentLocation = location.pathname.split("/")[2]
     const page_content = usePageContent(currentLocation)
 
-    const categories = useSelector(state => state.main.stories.categories)
-    const stories = useSelector(state => state.main.stories.stories)
-    const isLoading = useSelector(state => state.main.stories.isLoading)
-    const error = useSelector(state => state.main.stories.error)
-    const infoData = useSelector(state => state.main.info.data)
+    const { categories, stories, isLoading, error } = useSelector(state => state.main.stories)
+    const { data } = useSelector(state => state.main.info)
 
     const dispatch = useDispatch()
 
@@ -50,7 +47,7 @@ const Stories = () => {
                     })
                 }
             </div>
-            <SlideList sectionClass={"List SectionList"} data={infoData}/>
+            <SlideList sectionClass={"List SectionList"} data={data}/>
         </>
     );
 };

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ChevronUp from "../../icons/ChevronUp";
+import { MainContext } from "../../context/MainContext";
 
 const ScrollUp = () => {
+
+    const {showScrollUp} = useContext(MainContext)
 
     const handleScrollUp = ()=>{
         window.scrollTo({
@@ -10,8 +13,10 @@ const ScrollUp = () => {
         });
     }
 
+    console.log(showScrollUp);
+
     return (
-        <div className={"ScrollUp"} onClick={handleScrollUp}>
+        <div className={showScrollUp ? "ScrollUp Show" : "ScrollUp"} onClick={handleScrollUp}>
             <ChevronUp/>
         </div>
     );

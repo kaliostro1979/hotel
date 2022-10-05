@@ -18,13 +18,9 @@ const About = () => {
     const currentLocation = location.pathname.split("/")[2]
     const page_content = usePageContent()
 
-
-    const dataArray = useSelector(state => state.main.gallery.galleryData)
+    const { galleryData } = useSelector(state => state.main.gallery)
+    const { data, isLoading, error } = useSelector(state => state.main.about)
     const dispatch = useDispatch()
-
-    const data = useSelector(state => state.main.about.data)
-    const isLoading = useSelector(state => state.main.about.isLoading)
-    const error = useSelector(state => state.main.about.error)
 
     useEffect(()=>{
         dispatch(getAboutPageData())
@@ -45,7 +41,7 @@ const About = () => {
                     return <ImageWithText data={item} key={item.id}/>
                 })
             }
-            <MediaGallery dataArray={dataArray}/>
+            <MediaGallery dataArray={galleryData}/>
             <PartnersSlider/>
             <Careers/>
         </>

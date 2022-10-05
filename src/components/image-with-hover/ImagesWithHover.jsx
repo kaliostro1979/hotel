@@ -17,6 +17,7 @@ const ImagesWithHover = ({section}) => {
                     section.data.images.map((image, index)=>{
                         return (
                             <div
+                                key={image.name}
                                 onMouseEnter={()=>handleMouseEnter(index)}
                                 className={index === activeIndex ? "ImagesWithHoverTitleImage Active" : "ImagesWithHoverTitleImage"}
                             >

@@ -11,7 +11,7 @@ const PartnersSlider = () => {
     const nextRef = useRef(null);
     const dispatch  = useDispatch()
 
-    const partners = useSelector(state => state.main.partners.partners)
+    const { partners } = useSelector(state => state.main.partners)
 
     useEffect(()=>{
         dispatch(getPartners())

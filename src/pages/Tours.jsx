@@ -15,11 +15,8 @@ const Tours = () => {
     const page_content = usePageContent()
     const dispatch = useDispatch()
 
-    const accordionData = useSelector(state => state.main.tours.tours)
-    const variants = useSelector(state => state.main.tours.variants)
-    const infoData = useSelector(state => state.main.info.data)
-    const isLoading = useSelector(state => state.main.tours.isLoading)
-    const error = useSelector(state => state.main.tours.error)
+    const { tours, variants, isLoading, error } = useSelector(state => state.main.tours)
+    const { data } = useSelector(state => state.main.info)
 
     useEffect(()=>{
         dispatch(getToursAccordionData())
@@ -47,9 +44,9 @@ const Tours = () => {
                     )
                 })
             }
-            <SlideList sectionClass={"List SectionList Section"} data={infoData}/>
+            <SlideList sectionClass={"List SectionList Section"} data={data}/>
             <br/>
-            <ImageWithAccordion data={accordionData}/>
+            <ImageWithAccordion data={tours}/>
             <Subscribe/>
         </>
     );

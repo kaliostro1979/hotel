@@ -4,7 +4,7 @@ import {getBannerData} from "../redux/slices/banner.slice";
 import {useLocation} from "react-router-dom";
 
 export const usePageContent = () => {
-    const page_content = useSelector(state => state.main.banner.bannerContent.content)
+    const { content } = useSelector(state => state.main.banner.bannerContent)
     const dispatch = useDispatch()
 
     const location = useLocation()
@@ -17,5 +17,5 @@ export const usePageContent = () => {
         }
     }, [dispatch, currentLocation])
 
-    return page_content
+    return content
 }

@@ -18,11 +18,10 @@ const Hostel = () => {
     const dispatch = useDispatch()
     const page_content = usePageContent()
 
-    const accordionData = useSelector(state => state.main.tours.tours)
-    const dataArray = useSelector(state => state.main.gallery.galleryData)
-    const infoData = useSelector(state => state.main.info.data)
-    const rooms = useSelector(state => state.main.rooms.rooms)
-    const activeRoomMeta = useSelector(state => state.main.rooms.activeRoomMeta)
+    const { tours } = useSelector(state => state.main.tours)
+    const { galleryData } = useSelector(state => state.main.gallery)
+    const { data } = useSelector(state => state.main.info)
+    const { rooms, activeRoomMeta } = useSelector(state => state.main.rooms)
 
     useEffect(()=>{
         dispatch(getHostelAccordionData())
@@ -49,9 +48,9 @@ const Hostel = () => {
                 rooms={rooms}
                 activeRoomMeta={activeRoomMeta}
             />
-            <MediaGallery dataArray={dataArray}/>
-            <SlideList sectionClass={"List SectionList"} data={infoData}/>
-            <ImageWithAccordion data={accordionData}/>
+            <MediaGallery dataArray={galleryData}/>
+            <SlideList sectionClass={"List SectionList"} data={data}/>
+            <ImageWithAccordion data={tours}/>
         </>
     );
 };

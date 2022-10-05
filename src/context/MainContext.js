@@ -10,6 +10,15 @@ const MainProvider = ({children})=>{
     const [swiper, setSwiper] = useState(null);
     const [activeRoomIndex, setActiveRoomIndex] = useState(0)
     const [isShow, setIsShow] = useState(false)
+    const [showScrollUp, setShowScrollUp] = useState(false)
+
+    window.addEventListener("scroll", function (event){
+        if (this.scrollY >= 500) {
+            setShowScrollUp(true)
+        }else {
+            setShowScrollUp(false)
+        }
+    })
 
     return (
         <MainContext.Provider value={{
@@ -23,7 +32,8 @@ const MainProvider = ({children})=>{
             activeRoomIndex,
             setActiveRoomIndex,
             isShow,
-            setIsShow
+            setIsShow,
+            showScrollUp
         }}>
             {children}
         </MainContext.Provider>

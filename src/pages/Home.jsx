@@ -6,9 +6,7 @@ import Preloader from "../components/UI/Preloader";
 
 const Home = () => {
     const dispatch = useDispatch()
-    const homeData = useSelector(state => state.main.home.data)
-    const isLoading = useSelector(state => state.main.home.isLoading)
-    const error = useSelector(state => state.main.home.error)
+    const {data, isLoading, error} = useSelector(state => state.main.home)
 
     useEffect(()=>{
         dispatch(getHomeData())
@@ -18,7 +16,7 @@ const Home = () => {
         <div className={"Home"}>
             {error ? <h1>{error}</h1> : null}
             {
-                isLoading ? <Preloader/> : <SlideList sectionClass={"List"} data={homeData}/>
+                isLoading ? <Preloader/> : <SlideList sectionClass={"List"} data={data}/>
             }
         </div>
     );
